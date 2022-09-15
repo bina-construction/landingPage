@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: dev
-  repo: github.com/NJG-connect/bina-web/
+  repo: github.com/NJG-connect/bina-landingPage/
   # display_url: https://confident-bardeen-72ada4.netlify.app/
   # site_url: https://confident-bardeen-72ada4.netlify.app/
 
