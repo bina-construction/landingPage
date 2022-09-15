@@ -1,0 +1,11 @@
+@use "../../utils/variables.scss";
+
+.icon-button-container {
+  @include variables.wh(50px, 50px);
+  @include variables.dcc();
+  @include variables.pointer();
+  border-radius: 50%;
+  .icon-button-img {
+    @include variables.wh(25px, 25px);
+  }
+}

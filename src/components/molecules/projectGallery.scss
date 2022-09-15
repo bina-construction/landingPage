@@ -1,0 +1,226 @@
+@use "../../utils/variables.scss";
+
+.project-gallery-container {
+  @include variables.wh(25%, 100%);
+  min-height: 700px;
+  position: relative;
+
+  .title {
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 0;
+    position: absolute;
+  }
+
+  .title-default-mode {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 2;
+    animation: titleAnimation2 0.5s ease;
+  }
+
+  .title-hover-mode {
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: 500;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: titleAnimation 0.5s ease;
+  }
+
+  .bottom-container {
+    @include variables.dbc(column);
+    height: 90%;
+    min-height: 500px;
+    opacity: 1;
+    animation: showContainer 0.5s ease;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .project-img-container {
+    @include variables.wh(100%, 50%);
+    @include variables.dbc(row);
+    flex-wrap: wrap;
+
+    .project-img-item {
+      @include variables.wh(110px, 110px);
+      border: 3px solid white;
+
+      &:nth-child(4) {
+        margin: 0.8rem 0;
+      }
+    }
+  }
+}
+
+.project-gallery-container-default-mode {
+  @include variables.dcc(row);
+}
+
+.project-gallery-container-hover-mode {
+  @include variables.dfp(column, flex-end, center);
+  padding: 2rem;
+}
+
+//Keyframe
+
+@keyframes showContainer {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    line-height: 2;
+    font-weight: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    line-height: 1.5;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes titleAnimation2 {
+  0% {
+    line-height: 1.5;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    line-height: 2;
+    font-weight: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//Responsive
+
+@media only screen and (max-width: 1580px) {
+  .project-gallery-container {
+    .title-hover-mode {
+      font-size: 30px;
+    }
+    .text {
+      font-size: 17px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .project-gallery-container {
+    .title-default-mode {
+      font-size: 30px;
+    }
+    .title-hover-mode {
+      font-size: 20px;
+    }
+    .text {
+      font-size: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .project-gallery-container {
+    .project-img-container .project-img-item {
+      @include variables.wh(75px, 75px);
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .project-gallery-container {
+    width: 50%;
+
+    .title-default-mode {
+      font-size: 30px;
+    }
+    .title-hover-mode {
+      font-size: 30px;
+    }
+    .text {
+      font-size: 20px;
+    }
+
+    .project-img-container .project-img-item {
+      @include variables.wh(100px, 100px);
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .project-gallery-container {
+    width: 50%;
+    .title-hover-mode {
+      font-size: 25px;
+    }
+    .text {
+      font-size: 17px;
+    }
+
+    .project-img-container .project-img-item {
+      @include variables.wh(90px, 90px);
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .project-gallery-container {
+    @include variables.wh(100%, auto);
+    padding: 2rem 0 0 0;
+    min-height: 0;
+
+    &:not(:last-child) {
+      border-bottom: 4px solid white;
+    }
+
+    .bottom-container {
+      min-height: 0;
+      background-color: variables.$gray-color;
+      margin-top: 5rem;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid white;
+      border-top: 2px solid white;
+    }
+
+    .project-img-container {
+      margin-top: 1rem;
+    }
+  }
+
+  .project-gallery-container-hover-mode {
+    min-height: 400px;
+  }
+
+  .project-gallery-container-default-mode {
+    height: 200px;
+  }
+}

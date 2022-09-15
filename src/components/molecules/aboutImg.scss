@@ -1,0 +1,61 @@
+@use "../../utils/variables.scss";
+
+.about-img-container {
+  @include variables.wh(250px, 555px);
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 18px 20px 17px #00000029;
+
+  .about-img-name {
+    position: absolute;
+    bottom: 0;
+    left: 0.7rem;
+    color: variables.$primary-color;
+    font-size: 35px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+
+    .about-img-last-name {
+      text-transform: uppercase;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .about-img-container {
+    @include variables.wh(200px, 450px);
+
+    .about-img-name {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .about-img-container {
+    @include variables.wh(160px, 400px);
+
+    .about-img-name {
+      font-size: 20px;
+
+      .about-img-last-name {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .about-img-container {
+    @include variables.wh(125px, 350px);
+
+    .about-img-name {
+      font-size: 20px;
+
+      .about-img-last-name {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

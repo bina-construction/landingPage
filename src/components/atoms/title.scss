@@ -1,0 +1,68 @@
+@use "../../utils/variables";
+
+.atom-title {
+  position: relative;
+  @include variables.dcc(row);
+  width: 100%;
+
+  h1 {
+    font-size: 32px;
+    color: variables.$secondary-color;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 2rem 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      @include variables.wh(150px, 4px);
+      background-color: variables.$secondary-color;
+      border-radius: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      transform: translateX(-120%);
+    }
+
+    &::after {
+      transform: translate(20%);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .atom-title h1 {
+    font-size: 35px;
+
+    &::after,
+    &::before {
+      width: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .atom-title h1 {
+    font-size: 28px;
+
+    &::after,
+    &::before {
+      width: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .atom-title h1 {
+    font-size: 22px;
+
+    &::after,
+    &::before {
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@use "../../utils/variables.scss";
+
+#footer {
+  position: relative;
+  @include variables.wh(100%, auto);
+  @include variables.dbc(column);
+  padding-top: 2rem;
+  background-color: variables.$primary-color;
+
+  a,
+  p {
+    color: variables.$secondary-color;
+  }
+
+  a {
+    font-size: 17px;
+  }
+
+  .top {
+    @include variables.wh(100%, 7rem);
+    @include variables.dac(row);
+
+    .left,
+    .right {
+      width: 250px;
+    }
+
+    .left {
+      height: 100%;
+      @include variables.dfp(column, space-between, flex-start);
+
+      .item {
+        @include variables.dfp(row-reverse, flex-start, center);
+      }
+
+      .img {
+        @include variables.wh(20px, 20px);
+        margin-right: 10px;
+        filter: brightness(0) saturate(100%) invert(28%) sepia(9%)
+          saturate(1011%) hue-rotate(125deg) brightness(96%) contrast(92%);
+      }
+    }
+
+    .mid {
+      height: 100%;
+      @include variables.dbc(column);
+
+      h3 {
+        text-align: center;
+        font-weight: 500;
+        color: variables.$gray-color;
+      }
+    }
+
+    .right {
+      height: 5rem;
+      @include variables.dfp(column, space-between, flex-end);
+    }
+  }
+
+  .bottom {
+    @include variables.dcc(row);
+    width: 100%;
+    padding: 2rem 0;
+    background-color: white;
+    margin-top: 2rem;
+    box-shadow: -4px -6px 6px #00000029;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #footer {
+    .top {
+      @include variables.dfp(column, flex-start, center);
+      height: auto;
+
+      .left {
+        align-items: center;
+        height: 7rem;
+      }
+
+      .mid {
+        margin: 2rem 0;
+      }
+
+      .right {
+        height: 5rem;
+        @include variables.dfp(column, space-between, center);
+        margin-top: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../../utils/variables.scss";
+
+.atom-bina-logo-container {
+  @include variables.dcc(row);
+
+  .img {
+    @include variables.wh(100%, 100%);
+  }
+}
+
+.atom-bina-logo-container-medium {
+  @include variables.wh(150px, 50px);
+}
+
+.atom-bina-logo-container-large {
+  @include variables.wh(250px, 80px);
+}
+
+.atom-bina-logo-container-pointer {
+  @include variables.pointer();
+}
+
+@media only screen and (max-width: 480px) {
+  .atom-bina-logo-container-large {
+    @include variables.wh(200px, 60px);
+  }
+}

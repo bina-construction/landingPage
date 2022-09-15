@@ -1,0 +1,98 @@
+@use "../../utils/variables.scss";
+
+#home-skills {
+  @include variables.wh(100%, auto);
+  @include variables.dcc(column);
+  min-height: 100vh;
+  margin-top: 4rem;
+
+  .top {
+    @include variables.dcc(row);
+    @include variables.wh(100%, 500px);
+    margin-top: 1rem;
+
+    .gif {
+      @include variables.wh(70%, 100%);
+    }
+  }
+
+  .mid {
+    @include variables.wh(100%, auto);
+    @include variables.dac(row);
+    margin: 2rem 0 4rem 0;
+
+    .text {
+      width: 40%;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      color: variables.$secondary-color;
+      line-height: 1.2;
+      letter-spacing: 3px;
+    }
+  }
+
+  .bottom {
+    @include variables.wh(100%, auto);
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #home-skills {
+    .top {
+      height: 400px;
+      .gif {
+        @include variables.wh(90%, 100%);
+      }
+    }
+
+    .bottom {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #home-skills {
+    .top {
+      height: 250px;
+      .gif {
+        @include variables.wh(95%, 100%);
+      }
+    }
+
+    .bottom {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #home-skills {
+    .top {
+      height: 200px;
+    }
+
+    .mid {
+      @include variables.dxc(column);
+
+      .text {
+        width: 90%;
+        font-size: 15px;
+
+        &:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .bottom {
+      padding: 0 0.6rem;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@use "../../utils/variables.scss";
+
+#accompaniment-fs {
+  @include variables.wh(100%, auto);
+  margin-top: 4rem;
+
+  .main-container {
+    @include variables.wh(100%, auto);
+    background-color: variables.$primary-color;
+    box-shadow: inset 0px 3px 6px #00000029;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 5rem;
+
+    .item-container {
+      @include variables.wh(100%, 100%);
+      @include variables.dbc(column);
+
+      .icon-container {
+        @include variables.wh(60px, 60px);
+        background-color: white;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: inset 0px 3px 6px #f1e8d6, 0px 3px 6px #00000029;
+        border: 1px solid variables.$primary-color;
+
+        .icon {
+          @include variables.wh(100%, 100%);
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        color: variables.$secondary-color;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #accompaniment-fs {
+    .main-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #accompaniment-fs {
+    .main-container {
+      .item-container {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #accompaniment-fs {
+    .main-container {
+      padding: 2rem 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      .item-container {
+        @include variables.dbc(row);
+        p {
+          font-size: 14px;
+          width: 90%;
+          margin: 0;
+          text-align: left;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

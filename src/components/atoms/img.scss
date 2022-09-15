@@ -1,0 +1,9 @@
+@use "../../utils/variables.scss";
+
+.atom-img {
+  @include variables.img();
+}
+
+.atom-img-template {
+  @include variables.imgTemplate();
+}

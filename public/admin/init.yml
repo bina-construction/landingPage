@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: dev
+  repo: github.com/NJG-connect/bina-web/
+  # display_url: https://confident-bardeen-72ada4.netlify.app/
+  # site_url: https://confident-bardeen-72ada4.netlify.app/
+
+media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images"
+
+
+collections:
+- name: "Data" # Used in routes, e.g., /admin/collections/blog
+  label: "Data" # Used in the UI
+  files: # The path to the folder where the documents are stored
+    - label: "Data"
+      name: "data"
+      file: "src/data/data.json"
+      format: "json"
+      create: true # Allow users to create new documents in this collection
+      slug: "data" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+          - { label: "Titre du site title",  name: "title", widget: "string" }
+          - { label: "Description du Site", name: "description", widget: "string" }
+          - { label: "Titre de la section Mail", name: "titleForMail", widget: "string" }
+          - { label: "Info input du mail", name: "placeholderMail", widget: "string" }
+          - { label: "Info Bouton du mail", name: "buttonForMail", widget: "string" }
+          - { label: "Licence", name: "license", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Id de la carte :", name: "id", widget: "string" }
+              - { label: "Nom :", name: "name", widget: "string" }
+              - { label: "Description :", name: "description", widget: "string" }

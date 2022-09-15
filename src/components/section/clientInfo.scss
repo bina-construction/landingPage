@@ -1,0 +1,98 @@
+@use "../../utils/variables.scss";
+
+#clientInfo {
+  @include variables.wh(100%, 100vh);
+  @include variables.dcc(row);
+
+  .left-img {
+    @include variables.wh(30%, 100%);
+  }
+
+  .right-container {
+    @include variables.wh(70%, 100%);
+    @include variables.dac(column);
+
+    .top {
+      position: relative;
+      width: 80%;
+      @include variables.dcc(row);
+
+      .back-button {
+        position: absolute;
+        left: 0;
+        transform: rotate(180deg);
+      }
+    }
+
+    h3 {
+      color: variables.$gray-color;
+      font-size: 23px;
+      font-weight: 500;
+    }
+
+    .bottom {
+      position: relative;
+      width: 80%;
+      @include variables.dcc(row);
+
+      .bottom-submit-button .atom-img {
+        filter: brightness(0) saturate(100%) invert(97%) sepia(1%)
+          saturate(202%) hue-rotate(35deg) brightness(117%) contrast(100%);
+      }
+
+      .progress-container {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #clientInfo {
+    .left-img {
+      display: none;
+    }
+
+    .right-container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #clientInfo {
+    .right-container {
+      .bottom {
+        justify-content: flex-end;
+        .progress-container {
+          position: relative;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #clientInfo {
+    .right-container {
+      .top {
+        width: 95%;
+      }
+
+      .bottom {
+        @include variables.dcc(column);
+        .bottom-submit-button .img {
+          @include variables.wh(30px, 30px);
+        }
+
+        .progress-container {
+          width: 200px;
+          margin-top: 2rem;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

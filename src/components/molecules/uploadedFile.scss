@@ -1,0 +1,68 @@
+@use "../../utils/variables.scss";
+
+.atom-uploaded-file {
+  @include variables.wh(600px, 4.5rem);
+  @include variables.dac(row);
+  border-radius: 46px;
+  border: 1px solid variables.$gray-color;
+  margin: 2rem 0;
+
+  .check-img {
+    @include variables.wh(40px, 40px);
+  }
+
+  p {
+    font-size: 18px;
+    color: variables.$gray-color;
+    text-align: center;
+  }
+
+  .close-container {
+    @include variables.wh(40px, 40px);
+    @include variables.dcc(row);
+    filter: brightness(0) saturate(100%) invert(53%) sepia(0%) saturate(1681%)
+      hue-rotate(186deg) brightness(79%) contrast(82%);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .atom-uploaded-file {
+    @include variables.wh(400px, 3.5rem);
+
+    .check-img {
+      @include variables.wh(30px, 30px);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .atom-uploaded-file {
+    @include variables.wh(350px, 3rem);
+
+    .check-img {
+      @include variables.wh(20px, 20px);
+    }
+
+    .close-container {
+      @include variables.wh(25px, 25px);
+
+      .icon-button-container {
+        @include variables.wh(100%, 100%);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .atom-uploaded-file {
+    @include variables.wh(300px, 3rem);
+
+    p {
+      font-size: 15px;
+    }
+
+    .close-container {
+      @include variables.wh(20px, 20px);
+    }
+  }
+}

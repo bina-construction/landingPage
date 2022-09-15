@@ -1,0 +1,76 @@
+@use "../../utils/variables.scss";
+
+.atom-button {
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  @include variables.pointer();
+
+  &:hover {
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-button-variant-color {
+  font-size: 16px;
+  padding: 8px 15px;
+  color: black;
+  border: 3px solid black;
+
+  &:hover {
+    color: variables.$primary-color;
+    background-color: black;
+  }
+}
+.nav-button-default-color {
+  font-size: 16px;
+  padding: 8px 15px;
+  color: variables.$primary-color;
+  border: 3px solid variables.$primary-color;
+
+  &:hover {
+    color: variables.$secondary-color;
+    background-color: variables.$primary-color;
+  }
+}
+
+.contact-button {
+  @include variables.dcc(row);
+  padding: 12px 0;
+  font-size: 20px;
+  background-color: variables.$primary-color;
+  color: variables.$secondary-color;
+
+  &:hover {
+    color: variables.$primary-color;
+    background-color: black;
+  }
+}
+
+.submit-button {
+  @include variables.dcc(row);
+  background-color: variables.$blue-color;
+  color: white;
+  padding: 20px 40px;
+  border: 2px solid transparent;
+
+  .img {
+    @include variables.wh(30px, 30px);
+    margin-left: 1.5rem;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(0%)
+      hue-rotate(109deg) brightness(106%) contrast(105%);
+  }
+
+  &:hover {
+    background-color: white;
+    color: variables.$blue-color;
+    border: 2px solid variables.$blue-color;
+    transition: all 0.2s ease;
+
+    .img {
+      filter: none;
+    }
+  }
+}

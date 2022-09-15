@@ -1,0 +1,95 @@
+@use "../../utils/variables.scss";
+
+#document {
+  @include variables.wh(100%, auto);
+  @include variables.dfp(row, flex-end, center);
+
+  .left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include variables.wh(30%, 100vh);
+  }
+
+  .right {
+    @include variables.wh(70%, auto);
+    @include variables.dac(column);
+    padding: 2rem 0;
+
+    .top {
+      width: 80%;
+      position: relative;
+      @include variables.dcc(row);
+
+      .arrow {
+        position: absolute;
+        left: 0;
+        transform: rotate(180deg);
+      }
+    }
+
+    .mid {
+      margin: 3rem 0;
+      width: 80%;
+      @include variables.dcc(column);
+
+      h3 {
+        color: variables.$gray-color;
+        text-align: center;
+      }
+
+      .file-container {
+        @include variables.wh(80%, 22rem);
+        @include variables.dcc(column);
+
+        .wrapper {
+          @include variables.wh(auto, 100%);
+          overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          .title {
+            text-align: center;
+            color: variables.$gray-color;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 80%;
+      @include variables.dcc(row);
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #document {
+    .left {
+      display: none;
+    }
+
+    .right {
+      width: 100%;
+
+      .mid {
+        margin: 2rem 0;
+        .file-container {
+          height: 15rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #document {
+    .right {
+      .top {
+        width: 90%;
+      }
+    }
+  }
+}

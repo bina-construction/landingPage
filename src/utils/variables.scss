@@ -1,0 +1,89 @@
+/* Set All Style Variables Here */
+
+$primary-color: #f1e8d6;
+$secondary-color: #3a504e;
+$white-color: #f3f3f3;
+$blue-color: #62b2ab;
+$black-color: #4f4f4f;
+$gray-color: #707070;
+$bg-contact: #00000080;
+$blue-shadow1: #62b2ab80;
+$blue-shadow2: #62b2abad;
+
+$header-size: 73px;
+$title-size: 52px;
+
+$font: normal normal normal 52px/68px Lato;
+
+/* Set all mixins Here */
+
+@mixin df($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin dcc($direction: row) {
+  @include df($direction);
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin dbc($direction: row) {
+  @include df($direction);
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin dac($direction: row) {
+  @include df($direction);
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin dxc($direction: row) {
+  @include df($direction);
+  align-items: center;
+}
+
+@mixin dxs($direction: row) {
+  @include df($direction);
+  align-items: flex-start;
+}
+
+@mixin dxe($direction: row) {
+  @include df($direction);
+  align-items: flex-end;
+}
+
+@mixin dfp($direction: row, $j: start, $a: start) {
+  @include df($direction);
+  justify-content: $j;
+  align-items: $a;
+}
+
+@mixin imgTemplate() {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin img() {
+  vertical-align: middle;
+  object-position: center;
+}
+
+@mixin pointer($cursor: pointer) {
+  &:hover {
+    cursor: $cursor;
+  }
+}
+
+@mixin links($color: black) {
+  text-decoration: none;
+  color: $color;
+  @include pointer();
+}
+
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}

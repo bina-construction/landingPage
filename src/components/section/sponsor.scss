@@ -1,0 +1,36 @@
+@use "../../utils/variables.scss";
+
+#sponsor {
+  @include variables.wh(100%, 20rem);
+  @include variables.dac(column);
+  margin-top: 4rem;
+
+  .slider-off {
+    @include variables.wh(100%, 228px);
+    @include variables.dcc(row);
+    background-color: variables.$white-color;
+
+    .img {
+      @include variables.wh(80px, 80px);
+      min-width: 80px;
+      min-height: 80px;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #sponsor {
+    .slider-off .img {
+      min-width: 80px;
+      min-height: 80px;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@use "../../utils/variables.scss";
+
+#accompaniment-sg {
+  @include variables.wh(100%, auto);
+  @include variables.dbc(row);
+  margin-top: 4rem;
+
+  .left,
+  .right {
+    .item-container {
+      margin-top: 3rem;
+    }
+
+    .item-container .atom-text-banner:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .left {
+    @include variables.dfp(column, flex-start, flex-start);
+  }
+
+  .right {
+    @include variables.dfp(column, flex-start, flex-end);
+  }
+
+  .mid {
+    @include variables.dcc(row);
+    @include variables.wh(50px, 100%);
+
+    .img {
+      @include variables.wh(50px, 50px);
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #accompaniment-sg {
+    @include variables.dfp(column, center, flex-start);
+
+    .mid {
+      align-self: center;
+      margin: 4rem;
+    }
+
+    .right {
+      align-self: flex-end;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #accompaniment-sg {
+    .left,
+    .right {
+      height: auto;
+      width: 100%;
+    }
+
+    .left {
+      .item-container {
+        @include variables.dfp(column, center, flex-start);
+      }
+    }
+    .right {
+      .item-container {
+        @include variables.dfp(column, center, flex-end);
+      }
+    }
+  }
+}

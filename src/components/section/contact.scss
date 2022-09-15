@@ -1,0 +1,85 @@
+@use "../../utils/variables.scss";
+
+#contact {
+  position: relative;
+  @include variables.wh(100%, calc(100vh - 5rem));
+  padding: 2rem 0;
+
+  .background {
+    position: relative;
+    @include variables.wh(100%, 100%);
+    @include variables.dxc(row);
+  }
+
+  .main-container {
+    position: absolute;
+    right: 15rem;
+    @include variables.wh(400px, calc(80% - 4rem));
+    @include variables.dcc(column);
+    background-color: variables.$bg-contact;
+    padding: 2rem;
+
+    h3 {
+      color: variables.$primary-color;
+      font-size: 30px;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+      color: white;
+    }
+
+    .form-container {
+      width: 100%;
+    }
+
+    .field-container {
+      @include variables.dbc(column);
+
+      .atom-input-container:first-child {
+        margin-bottom: 1rem;
+      }
+
+      &:first-child {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #contact {
+    height: auto;
+    .background {
+      @include variables.dcc(row);
+    }
+
+    .main-container {
+      position: relative;
+      right: 0;
+      margin: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contact {
+    h3 {
+      font-size: 25px !important;
+      margin-bottom: 1rem !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+
+    .field-container {
+      &:first-child {
+        margin-bottom: 2rem !important;
+      }
+    }
+  }
+}

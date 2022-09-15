@@ -1,0 +1,136 @@
+@use "../../utils/variables.scss";
+
+.atom-text-banner {
+  .icon {
+    @include variables.wh(30px, 30px);
+  }
+}
+
+.atom-text-banner-large-size {
+  @include variables.wh(600px, auto);
+  padding: 2rem 1rem;
+
+  h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.atom-text-banner-medium-size {
+  @include variables.wh(450px, auto);
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.atom-text-banner-center {
+  @include variables.dcc(row);
+}
+
+.atom-text-banner-row {
+  @include variables.dxc(row);
+  padding-left: 4rem;
+  padding-right: 1rem;
+
+  h3 {
+    text-align: left;
+  }
+
+  .icon {
+    margin-right: 2rem;
+  }
+}
+
+.atom-text-banner-row-reverse {
+  @include variables.dxc(row-reverse);
+  padding-left: 1rem;
+  padding-right: 4rem;
+
+  h3 {
+    text-align: right;
+  }
+
+  .icon {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .atom-text-banner-large-size {
+    @include variables.wh(450px, auto);
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  .atom-text-banner-medium-size {
+    @include variables.wh(400px, auto);
+
+    h3 {
+      font-size: 19px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .atom-text-banner {
+    .icon {
+      @include variables.wh(25px, 25px);
+    }
+  }
+
+  .atom-text-banner-large-size {
+    @include variables.wh(400px, auto);
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  .atom-text-banner-medium-size {
+    @include variables.wh(350px, auto);
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .atom-text-banner {
+    .icon {
+      @include variables.wh(20px, 20px);
+    }
+  }
+
+  .atom-text-banner-large-size {
+    @include variables.wh(100%, auto);
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  .atom-text-banner-medium-size {
+    @include variables.wh(90%, auto);
+
+    h3 {
+      font-size: 17px;
+    }
+  }
+
+  .atom-text-banner-row-reverse {
+    padding-right: 1.5rem;
+  }
+
+  .atom-text-banner-row {
+    padding-left: 1.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+@use "../../utils/variables.scss";
+
+.slider-container {
+  position: relative;
+  @include variables.wh(100%, 228px);
+  @include variables.dcc(row);
+  background-color: variables.$white-color;
+
+  h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 300;
+    @include variables.pointer();
+  }
+
+  h1:first-child {
+    margin-right: 4rem;
+  }
+
+  h1:last-child {
+    margin-left: 4rem;
+  }
+
+  .slider {
+    position: relative;
+    @include variables.wh(100%, 100%);
+    max-width: calc(360px + 12rem);
+    padding: auto 0;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .img {
+    min-width: 90px;
+    min-height: 90px;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider-container {
+    .slider {
+      max-width: calc(270px + 8rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .slider-container {
+    .slider {
+      max-width: calc(180px + 4rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slider-container {
+    .slider {
+      max-width: calc(120px + 4rem);
+    }
+
+    .img {
+      min-width: 60px;
+      min-height: 60px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h1:first-child {
+      margin-right: 2.5rem;
+    }
+
+    h1:last-child {
+      margin-left: 2.5rem;
+    }
+  }
+}

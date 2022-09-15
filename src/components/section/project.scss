@@ -1,0 +1,19 @@
+@use "../../utils/variables.scss";
+
+#home-project {
+  @include variables.wh(100%, auto);
+  margin-top: 4rem;
+
+  .gallery-container {
+    @include variables.wh(100%, auto);
+    @include variables.dcc(row);
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #home-project {
+    .gallery-container {
+      flex-wrap: wrap;
+    }
+  }
+}

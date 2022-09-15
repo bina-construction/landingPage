@@ -1,0 +1,91 @@
+@use "../../utils/variables.scss";
+
+.atom-input-container {
+  position: relative;
+  width: 100%;
+  @include variables.dfp(row, flex-end, center);
+
+  label {
+    font-size: 20px;
+    color: variables.$gray-color;
+    text-align: right;
+    width: auto;
+  }
+
+  input {
+    @include variables.wh(90%, 100%);
+    border: none;
+    font-size: 20px;
+    padding: 5px 0 5px 6px;
+    color: variables.$black-color;
+
+    &::placeholder {
+      color: variables.$gray-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .atom-input-icon {
+    @include variables.wh(39px, 39px);
+  }
+}
+
+.icon-mode {
+  border: 3px solid variables.$primary-color;
+  background-color: white;
+}
+
+.input-number-mode {
+  width: 70% !important;
+  border-top: 1px solid variables.$blue-color !important;
+  border-bottom: 1px solid variables.$blue-color !important;
+  text-align: center;
+}
+
+.input-atom-arrow-mode-arrow {
+  @include variables.dcc(row);
+  @include variables.pointer();
+  width: 20%;
+  border: 1px solid variables.$blue-color;
+  color: variables.$blue-color;
+  padding: 5px 0;
+}
+
+.input-label-mode {
+  width: 320px !important;
+  border-bottom: 1.5px solid #707070 !important;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 510px) {
+  .atom-input-container {
+    input,
+    label {
+      font-size: 20px;
+    }
+
+    .input-label-mode {
+      width: 200px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .atom-input-container {
+    input,
+    label {
+      font-size: 16px;
+    }
+
+    .input-label-mode {
+      width: 150px !important;
+    }
+
+    .input-atom-arrow-mode-arrow {
+      height: 30px;
+    }
+  }
+}

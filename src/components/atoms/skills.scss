@@ -1,0 +1,16 @@
+@use "../../utils/variables.scss";
+
+.skills-item {
+  @include variables.dxc(row);
+
+  h4 {
+    font-size: 27px;
+    font-weight: 400;
+    color: variables.$black-color;
+    margin: 0 0 0 3rem;
+  }
+
+  .img {
+    @include variables.wh(35px, 35px);
+  }
+}

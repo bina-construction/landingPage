@@ -1,0 +1,44 @@
+@use "../../utils/variables.scss";
+
+.project-number-card {
+  @include variables.wh(170px, 170px);
+  @include variables.dbc(column);
+  box-shadow: 0px 3px 6px #62b2ab80;
+  border-radius: 39px;
+
+  &:hover {
+    box-shadow: 0px 6px 10px #62b2abad;
+  }
+
+  .button-img {
+    @include variables.wh(25px, 25px);
+    filter: brightness(0) saturate(100%) invert(68%) sepia(21%) saturate(733%)
+      hue-rotate(126deg) brightness(91%) contrast(84%);
+  }
+
+  .title {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: variables.$font;
+    font-weight: 300;
+    text-align: center;
+    color: variables.$gray-color;
+  }
+
+  .input-container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project-number-card {
+    @include variables.wh(150px, 150px);
+
+    .button-img {
+      @include variables.wh(20px, 20px);
+    }
+    .title {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@use "../../utils/variables.scss";
+
+#service {
+  position: relative;
+  @include variables.wh(100%, 100vh);
+  @include variables.dcc(row);
+
+  .left {
+    @include variables.wh(70%, 100%);
+    @include variables.dac(column);
+
+    .top {
+      position: relative;
+      @include variables.dcc(row);
+      width: 80%;
+
+      .arrow {
+        position: absolute;
+        left: 0;
+        transform: rotate(180deg);
+      }
+    }
+
+    h3 {
+      color: variables.$gray-color;
+      font-size: 23px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .card-button-container {
+      width: 80%;
+      @include variables.dac(row);
+      flex-wrap: wrap;
+    }
+
+    .bottom {
+      width: 80%;
+      @include variables.dfp(row, flex-end, center);
+    }
+  }
+
+  .right {
+    @include variables.wh(30%, 100%);
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  #service {
+    .card-button-container {
+      width: 100%;
+
+      .project-card-button:last-child {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #service {
+    .left {
+      width: 100%;
+    }
+
+    .right {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #service {
+    .left {
+      .card-button-container {
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #service {
+    height: auto;
+
+    .left {
+      .top {
+        width: 95%;
+        margin-top: 2rem;
+      }
+
+      h3 {
+        width: 90%;
+        margin: 2rem 0;
+      }
+
+      .card-button-container {
+        margin-bottom: 2rem;
+      }
+
+      .card-button-container .project-card-button:nth-child(2) {
+        margin-top: 2rem;
+      }
+
+      .bottom {
+        justify-content: center;
+      }
+    }
+  }
+}

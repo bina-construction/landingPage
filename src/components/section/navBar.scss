@@ -1,0 +1,204 @@
+@use "../../utils/variables.scss";
+
+//Variant color styles
+.home-nav-default-color {
+  background-color: variables.$secondary-color;
+}
+
+.home-nav-variant-color {
+  background-color: variables.$primary-color;
+}
+
+//Basic style
+#home-nav {
+  position: fixed;
+  top: 0;
+  @include variables.wh(100%, 5rem);
+  @include variables.dcc(row);
+  z-index: 99;
+  transition: all 0.3s ease;
+  padding: 0 2rem;
+
+  .bina-logo {
+    transition: all 0.3s ease;
+  }
+  .bina-logo-filter .img {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(6565%)
+      hue-rotate(1deg) brightness(110%) contrast(83%);
+  }
+
+  .right {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    z-index: 300;
+
+    .navigation {
+      width: 100%;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, 2fr);
+      grid-template-rows: 1fr;
+    }
+
+    .navigation a {
+      position: relative;
+      text-transform: uppercase;
+      font-size: clamp(13px, 16px, 16px);
+      text-align: center;
+      padding: 7px 0;
+      transition: all 0.3s ease;
+    }
+
+    .navigation-default-color a:hover {
+      text-shadow: 0 0 0.5px variables.$primary-color,
+        0 0 0.5px variables.$primary-color;
+    }
+
+    .navigation-default-color a:not(:last-child) {
+      border-right: 2px solid variables.$primary-color;
+    }
+
+    .navigation-variant-color a:hover {
+      text-shadow: 0 0 0.5px black, 0 0 0.5px black;
+    }
+
+    .navigation-variant-color a:not(:last-child) {
+      border-right: 2px solid black;
+    }
+
+    .link {
+      width: 100%;
+      min-width: 300px;
+      @include variables.dbc(row);
+
+      div {
+        transition: all 0.3s ease;
+      }
+    }
+
+    .link-default-color {
+      .icon-button-container {
+        filter: brightness(0) saturate(100%) invert(92%) sepia(22%)
+          saturate(153%) hue-rotate(354deg) brightness(99%) contrast(89%);
+      }
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 5rem;
+    transition: 0.3s ease;
+  }
+
+  .icon-default-color {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(22%) saturate(153%)
+      hue-rotate(354deg) brightness(99%) contrast(89%);
+  }
+  .icon-variant-color {
+    filter: brightness(0) saturate(100%);
+  }
+}
+
+//Keyframmes
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120%);
+  }
+}
+
+//Responsive
+
+@media only screen and (max-width: 1200px) {
+  #home-nav {
+    @include variables.dcc(row);
+
+    .bina-logo {
+      margin: 0;
+      z-index: 200;
+    }
+
+    .right {
+      display: none;
+
+      .link {
+        @include variables.dbc(column);
+        height: 110px;
+      }
+    }
+
+    .show-default-color {
+      background-color: variables.$secondary-color;
+    }
+
+    .show-variant-color {
+      background-color: variables.$primary-color;
+    }
+
+    .show {
+      position: fixed;
+      @include variables.wh(100%, auto);
+      @include variables.dac(column);
+      top: 0;
+      left: 0;
+      margin-top: 5rem;
+      padding: 2rem 0;
+      transition: all 0.3s ease;
+
+      .navigation {
+        @include variables.dbc(column);
+        margin-bottom: 2rem;
+        width: 90%;
+
+        & a {
+          font-size: 18px;
+        }
+
+        & a:not(:last-child) {
+          border: none;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .slide-in {
+      animation: 0.7s slideIn;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+
+    .slide-out {
+      animation: 0.7s slideOut;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #home-nav {
+    .icon {
+      right: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #home-nav {
+    .icon {
+      right: 1rem;
+    }
+  }
+}

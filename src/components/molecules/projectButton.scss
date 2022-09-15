@@ -1,0 +1,53 @@
+@use "../../utils/variables.scss";
+
+.project-card-button {
+  width: 222px;
+  height: 222px;
+  box-shadow: 0px 3px 6px #62b2ab80;
+  border-radius: 39px;
+  @include variables.dcc(column);
+  @include variables.pointer();
+
+  &:hover {
+    box-shadow: 0px 6px 10px #62b2abad;
+  }
+
+  .button-img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(21%) saturate(733%)
+      hue-rotate(126deg) brightness(91%) contrast(84%);
+  }
+
+  p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: variables.$font;
+    font-weight: 300;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1.4;
+    color: variables.$gray-color;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .project-card-button {
+    width: 170px;
+    height: 170px;
+
+    .button-img {
+      width: 40px;
+      height: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .progress-container {
+    margin-right: 2rem;
+  }
+}
