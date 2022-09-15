@@ -5,7 +5,7 @@ backend:
   # display_url: https://confident-bardeen-72ada4.netlify.app/
   # site_url: https://confident-bardeen-72ada4.netlify.app/
 
-media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
+media_folder: "src/assets/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images"
 
 
@@ -20,6 +20,18 @@ collections:
       create: true # Allow users to create new documents in this collection
       slug: "data" # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
+        - label: "NavBar"
+          name: "NavBar"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Nom du Bouton, name: Boutton, widget: string }
+          - label: Liens
+            name: Links
+            widget: list
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+            - { label: "Redirection", name: "href", widget: "string" }
         - label: "Header"
           name: "Header"
           widget: "object"
@@ -48,7 +60,6 @@ collections:
             fields:
             - { label: "Titre", name: "title", widget: "string" }
             - { label: "Nom de l'icon", name: "icon", widget: "string" }
-
         - label: "Footer"
           name: "Footer"
           widget: "object"
@@ -72,6 +83,104 @@ collections:
             - { label: "Titre", name: "title", widget: "string" }
             - { label: "Lien", name: "link", widget: "string" }
 
+        - label: "Accompagnement"
+          name: "accompaniment"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Titre, name: title, widget: string }
+          - { label: Image, name: img, widget: string }
+          - label: "Contenu Top"
+            name: "top"
+            widget: "list"
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+            - { label: "Icon", name: "icon", widget: "string" }
+          - label: "Contenu à gauche"
+            name: "left"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - label: "items"
+              name: "item"
+              widget: "list"
+              fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }
+          - label: "Contenu à droite"
+            name: "right"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - label: items
+              name: item
+              widget: list
+              fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }
+
+        - label: "Projets"
+          name: "project"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Titre, name: title, widget: string }
+          - label: "Projet N°1"
+            name: "projectType1"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: string }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "string" }
+          - label: "Projet N°2"
+            name: "projectType2"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: string }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "string" }
+          - label: "Projet N°3"
+            name: "projectType3"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: string }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "string" }
+          - label: "Projet N°4"
+            name: "projectType4"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: string }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "string" }
+        
+
         - label: "Contact"
           name: "Contact"
           widget: "object"
@@ -80,3 +189,52 @@ collections:
           - { label: Photo de Couverture, name: background, widget: string }
           - { label:  Titre, name: title, widget: string }
           - { label: Sous-Titre, name: subtitle, widget: string }
+
+        - label: "Citation"
+          name: "quote"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Phrase, name: sentence, widget: string }
+          - { label: Auteur, name: author, widget: string }
+
+        - label: "Sponsor"
+          name: "sponsor"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Titre, name: title, widget: string }
+          - label: "Images"
+            name: "img"
+            widget: list
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+
+        - label: "About"
+          name: "about"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Text, name: text-bina, widget: string }
+          - { label:  Sous-Text, name: text, widget: string }
+          - label: "Titre"
+            name: "title"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Phrase Principal, name: main, widget: string }
+            - { label:  Phrase Raccourci, name: reduce, widget: string }
+          - label: "Premier Profil"
+            name: "card1"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Nom, name: name, widget: string }
+            - { label:  Image, name: img, widget: string }
+          - label: "Deuxième Profil"
+            name: "card2"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Nom, name: name, widget: string }
+            - { label:  Image, name: img, widget: string }
