@@ -32,4 +32,16 @@ collections:
             fields:
             - { label: "Titre", name: "title", widget: "string" }
             - { label: "Redirection", name: "href", widget: "string" }
-       
+        - label: "Header"
+          name: "Header"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+          - label: "Titre"
+            name: "title"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: Ligne 1, name: line1, widget: string }
+              - { label: Ligne 2, name: line2, widget: string }
