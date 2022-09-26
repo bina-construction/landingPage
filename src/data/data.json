@@ -117,10 +117,10 @@
     }
   },
   "Header": {
-    "background": "header.webp",
+    "background": "/images/autres.png",
     "title": {
       "line1": "Un projet préparé,",
-      "line2": "Un projet réussi..."
+      "line2": "Un projet réussi...A"
     }
   },
   "about": {
@@ -158,7 +158,7 @@
         "href": "#about"
       }
     ],
-    "Boutton": "Préparer mon project"
+    "Boutton": "Préparer mon projet"
   },
   "project": {
     "title": "Nos projets",
