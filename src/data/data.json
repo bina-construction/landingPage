@@ -117,7 +117,7 @@
     }
   },
   "Header": {
-    "background": "/images/header.webp",
+    "background": "https://images.ctfassets.net/hrltx12pl8hq/3LQNVy2fosQOoyowI0gGc/acb755330a50e21b8cff92fb27d4f59e/sub-category-4.jpg",
     "title": {
       "line1": "Un projet préparé,",
       "line2": "Un projet réussi..."
