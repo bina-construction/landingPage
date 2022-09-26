@@ -117,7 +117,7 @@
     }
   },
   "Header": {
-    "background": "/src/assets/images/file.webp",
+    "background": "/images/header.webp",
     "title": {
       "line1": "Un projet préparé,",
       "line2": "Un projet réussi..."
