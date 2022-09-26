@@ -5,8 +5,11 @@ backend:
   # display_url: https://confident-bardeen-72ada4.netlify.app/
   # site_url: https://confident-bardeen-72ada4.netlify.app/
 
-media_folder: "src/assets/images" # Media files will be stored in the repo under static/images/uploads
+# media_folder: "src/assets/images" # Media files will be stored in the repo under static/images/uploads
 # public_folder: "/images"
+
+media_folder: "public/images" 
+public_folder: "/images" 
 
 
 collections:
