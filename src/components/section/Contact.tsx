@@ -58,14 +58,14 @@ const Contact: React.FC<Props> = ({ onSubmit }) => {
                 type="text"
                 onChange={(value) => setName(value)}
                 placeholder="Nom Prénom"
-                icon="user.webp"
+                icon="/images/user.webp"
                 value={name}
               />
               <Input
                 type="tel"
                 onChange={(value) => setTel(value)}
                 placeholder="Tél"
-                icon="phone.webp"
+                icon="/images/phone.webp"
                 value={tel}
               />
             </div>

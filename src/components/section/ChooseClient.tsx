@@ -15,7 +15,7 @@ const ChooseClient: React.FC<Props> = ({ onClick, home }) => {
     <section id="choose">
       <div className="left-container">
         <div className="top">
-          <IconButton img="close.webp" onClick={home} />
+          <IconButton img="/images/close.webp" onClick={home} />
           <BinaLogo onClick={home} />
         </div>
         <h3 id="project-screen1-title">{infoJson.screen1.title}</h3>

@@ -20,7 +20,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
       <div className="left">
         <div className="top">
           <div className="arrow">
-            <IconButton img="arrow.svg" onClick={back} />
+            <IconButton img="/images/arrow.svg" onClick={back} />
           </div>
           <BinaLogo onClick={home} />
         </div>
@@ -45,7 +45,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
             </h3>
             <div className="container">
               <NumberProjectCard
-                img="key.svg"
+                img="/images/key.svg"
                 text="Chambre"
                 value={mesure.room?.bedroom ? String(mesure.room.bedroom) : "0"}
                 update={(number) =>
@@ -56,7 +56,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
                 }
               />
               <NumberProjectCard
-                img="key.svg"
+                img="/images/key.svg"
                 text="Cuisine"
                 value={mesure.room?.kitchen ? String(mesure.room.kitchen) : "0"}
                 update={(number) =>
@@ -67,7 +67,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
                 }
               />
               <NumberProjectCard
-                img="key.svg"
+                img="/images/key.svg"
                 text="Salon"
                 value={
                   mesure.room?.livingRoom ? String(mesure.room.livingRoom) : "0"
@@ -80,7 +80,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
                 }
               />
               <NumberProjectCard
-                img="key.svg"
+                img="/images/key.svg"
                 text="Salle de bain"
                 value={
                   mesure.room?.bathroom ? String(mesure.room.bathroom) : "0"
@@ -93,7 +93,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
                 }
               />
               <NumberProjectCard
-                img="key.svg"
+                img="/images/key.svg"
                 text="Autre"
                 value={mesure.room?.other ? String(mesure.room.other) : "0"}
                 update={(number) =>
@@ -108,7 +108,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
         </div>
         <div className="bottom">
           <IconButton
-            img="arrow.svg"
+            img="/images/arrow.svg"
             onClick={() => onSubmit(mesure)}
             style={{ background: "#63B2AB" }}
           />

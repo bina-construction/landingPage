@@ -26,7 +26,10 @@ const ZoomImg: React.FC<Props> = ({ img, htmlId, defaultStyle = "", size }) => {
       <Img htmlId={htmlId} img={img} size={size} className="img" />
       {isFullscreen && (
         <div className="close-button-container">
-          <IconButton img="close.webp" onClick={() => setIsFullscreen(false)} />
+          <IconButton
+            img="/images/close.webp"
+            onClick={() => setIsFullscreen(false)}
+          />
         </div>
       )}
     </div>

@@ -32,7 +32,7 @@ const Document: React.FC<Props> = ({ home, back, onSubmit, initialValue }) => {
       <div className="right">
         <div className="top">
           <div className="arrow">
-            <IconButton img="arrow.svg" onClick={back} />
+            <IconButton img="/images/arrow.svg" onClick={back} />
           </div>
           <BinaLogo onClick={home} />
         </div>

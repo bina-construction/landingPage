@@ -18,7 +18,7 @@ export const Service: React.FC<Props> = ({ back, onClick, home }) => {
       <div className="left">
         <div className="top">
           <div className="arrow">
-            <IconButton img="arrow.svg" onClick={back} />
+            <IconButton img="/images/arrow.svg" onClick={back} />
           </div>
           <BinaLogo onClick={home} />
         </div>
