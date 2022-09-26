@@ -1,36 +1,36 @@
 {
   "Contact": {
-    "background": "header.webp",
+    "background": "/images/header.webp",
     "title": "Pas le temps pour un devis. Laisser vos coordonnées, on vous rappelle",
     "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeuil d'expert"
   },
   "skills": {
     "title": "Savoir-faire",
-    "gif": "header.webp",
+    "gif": "/images/header.webp",
     "skill": [
       {
         "title": "Définir les objectifs du projet",
-        "icon": "crossair.svg"
+        "icon": "/images/crossair.svg"
       },
       {
         "title": "Conception du projet",
-        "icon": "addFile.svg"
+        "icon": "/images/addFile.svg"
       },
       {
         "title": "Validation du projet",
-        "icon": "like.svg"
+        "icon": "/images/like.svg"
       },
       {
         "title": "Coordination et suivi de vos travaux",
-        "icon": "colab.svg"
+        "icon": "/images/colab.svg"
       },
       {
         "title": "Réception du chantier",
-        "icon": "key2.svg"
+        "icon": "/images/key2.svg"
       },
       {
         "title": "Les garanties après travaux",
-        "icon": "approve.svg"
+        "icon": "/images/approve.svg"
       }
     ],
     "text1": "BINA a pour mot d’ordre de privilégier la qualité à la quantité. Nous vous proposons un service complet. Un architecte d’intérieur, un économiste, un conducteur de travaux et des bureaux d’études sont mis à votre disposition.",
@@ -41,27 +41,27 @@
     "top": [
       {
         "title": "Une solution clé en main",
-        "icon": "key.svg"
+        "icon": "/images/key.svg"
       },
       {
         "title": "Une assurance décennale de vos ouvrages",
-        "icon": "sheild.svg"
+        "icon": "/images/sheild.svg"
       },
       {
         "title": "Un interlocuteur unique",
-        "icon": "collaboration.svg"
+        "icon": "/images/collaboration.svg"
       },
       {
         "title": "Un engagement contractuel sur les prix et les délais",
-        "icon": "delay.svg"
+        "icon": "/images/delay.svg"
       },
       {
         "title": "Une sélection des entreprise sous traitantes",
-        "icon": "handleshake.svg"
+        "icon": "/images/handleshake.svg"
       },
       {
         "title": "Une obligation de résultat",
-        "icon": "improvement.svg"
+        "icon": "/images/improvement.svg"
       }
     ],
     "img": "Handshake_1.svg",
@@ -70,23 +70,23 @@
       "item": [
         {
           "title": "Un seul interlocuteur",
-          "icon": "interlocuteur.png"
+          "icon": "/images/interlocuteur.png"
         },
         {
           "title": "Un seul contrat",
-          "icon": "contrat.png"
+          "icon": "/images/contrat.png"
         },
         {
           "title": "Une seule lecture",
-          "icon": "lecture.png"
+          "icon": "/images/lecture.png"
         },
         {
           "title": "Un seul Prix",
-          "icon": "prix.png"
+          "icon": "/images/prix.png"
         },
         {
           "title": "Un seul délai",
-          "icon": "delai.png"
+          "icon": "/images/delai.png"
         }
       ]
     },
@@ -95,23 +95,23 @@
       "item": [
         {
           "title": "Architectes d'intérieur",
-          "icon": "archi.png"
+          "icon": "/images/archi.png"
         },
         {
           "title": "Economiste",
-          "icon": "eco.png"
+          "icon": "/images/eco.png"
         },
         {
           "title": "Conducteur de travaux",
-          "icon": "travaux.png"
+          "icon": "/images/travaux.png"
         },
         {
           "title": "Bureau d'étude",
-          "icon": "etude.png"
+          "icon": "/images/etude.png"
         },
         {
           "title": "Tout corps d'états",
-          "icon": "corps_detat.png"
+          "icon": "/images/corps_detat.png"
         }
       ]
     }
@@ -132,11 +132,11 @@
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet convallis dolor, vitae pharetra magna. Vivamus ac scelerisque risus. In hac habitasse platea dictumst. Curabitur malesuada id odio et rhoncus. Curabitur non ligula velit. Curabitur tristique tempor accumsan.",
     "card1": {
       "name": "Fayçal Benchoira",
-      "img": "profil2.png"
+      "img": "/images/profil2.png"
     },
     "card2": {
       "name": "Nicolas Iehl",
-      "img": "profil1.png"
+      "img": "/images/profil1.png"
     }
   },
   "NavBar": {
@@ -164,89 +164,89 @@
     "title": "Nos projets",
     "projectType1": {
       "title": "Hôtellerie & restauration",
-      "background": "pro.png",
+      "background": "/images/pro.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         }
       ]
     },
     "projectType2": {
       "title": "Retail",
-      "background": "retail.png",
+      "background": "/images/retail.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         }
       ]
     },
     "projectType3": {
       "title": "Résidentiel",
-      "background": "residentiel.png",
+      "background": "/images/residentiel.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         }
       ]
     },
     "projectType4": {
       "title": "Autres Projets",
-      "background": "autres.png",
+      "background": "/images/autres.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         },
         {
-          "item": "header.webp"
+          "item": "/images/header.webp"
         }
       ]
     }
@@ -255,16 +255,16 @@
     "title": "Nos Partenaires",
     "img": [
       {
-        "title": "corp1.svg"
+        "title": "/images/corp1.svg"
       },
       {
-        "title": "corp2.svg"
+        "title": "/images/corp2.svg"
       },
       {
-        "title": "corp3.svg"
+        "title": "/images/corp3.svg"
       },
       {
-        "title": "corp4.svg"
+        "title": "/images/corp4.svg"
       }
     ]
   },
@@ -274,22 +274,22 @@
       {
         "title": "LinkedIn",
         "link": "#",
-        "icon": "linkedin.svg"
+        "icon": "/images/linkedin.svg"
       },
       {
         "title": "Instagram",
         "link": "#",
-        "icon": "instagram.svg"
+        "icon": "/images/instagram.svg"
       },
       {
         "title": "Facebook",
         "link": "#",
-        "icon": "facebook.svg"
+        "icon": "/images/facebook.svg"
       },
       {
         "title": "Pinterest",
         "link": "#",
-        "icon": "pinterest.svg"
+        "icon": "/images/pinterest.svg"
       }
     ],
     "additionalLink": [

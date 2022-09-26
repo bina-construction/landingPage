@@ -43,7 +43,7 @@ const Contact: React.FC<Props> = ({ onSubmit }) => {
   return (
     <section id="contact">
       <ImgTemplate
-        img="contact.webp"
+        img={infoJson.Contact.background}
         className="background"
         htmlId="contact-background"
         size="cover"

@@ -27,9 +27,7 @@ const ImgTemplate: React.FC<Props> = ({
     <div
       className={`${className} atom-img-template`}
       style={{
-        backgroundImage: `url(${
-          img && img.startsWith("/images/") ? require(img) : img
-        })`,
+        backgroundImage: `url(${img})`,
         backgroundSize: `${size}`,
       }}
       id={htmlId}
@@ -43,15 +41,3 @@ const ImgTemplate: React.FC<Props> = ({
 };
 
 export default ImgTemplate;
-
-// backgroundImage: `url(${
-//   img && img.startsWith("/src/assets/images/") ? require(img) : img
-// })`,
-
-// backgroundImage: `url(${
-//   img && img.startsWith("/src/assets/images/")
-//     ? require(img.split("/src/")[1])
-//     : img
-// })`,
-
-// backgroundImage: `url(${img && require("assets/images/header.webp")})`,
