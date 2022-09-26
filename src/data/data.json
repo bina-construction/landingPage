@@ -117,10 +117,10 @@
     }
   },
   "Header": {
-    "background": "/images/autres.png",
+    "background": "/src/assets/images/file.webp",
     "title": {
       "line1": "Un projet préparé,",
-      "line2": "Un projet réussi...A"
+      "line2": "Un projet réussi..."
     }
   },
   "about": {
