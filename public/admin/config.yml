@@ -48,3 +48,58 @@ collections:
             fields:
               - { label: Ligne 1, name: line1, widget: string }
               - { label: Ligne 2, name: line2, widget: string }
+      
+        - label: "Accompagnement"
+          name: "accompaniment"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Titre, name: title, widget: string }
+          - { label: Image, name: img, widget: "image",  allow_multiple: false }
+          - label: "Contenu Top"
+            name: "top"
+            widget: "list"
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+            - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+          - label: "Contenu à gauche"
+            name: "left"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - label: "items"
+              name: "item"
+              widget: "list"
+              fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+          - label: "Contenu à droite"
+            name: "right"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - label: items
+              name: item
+              widget: list
+              fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+
+        - label: "Savoir-faire"
+          name: "skills"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Texte 1, name: text1, widget: string }
+          - { label: Texte 2, name: text2, widget: string }
+          - { label: Titre, name: title, widget: string }
+          - { label: Gif, name: gif, widget: "image",  allow_multiple: false }
+          - label: Compétences
+            name: skill
+            widget: list
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+            - { label: "Nom de l'icon", name: "icon", widget: "image",  allow_multiple: false }
+        

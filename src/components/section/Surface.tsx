@@ -30,7 +30,7 @@ const Surface: React.FC<Props> = ({ back, home, onSubmit }) => {
               {infoJson.screen4.title1}
             </h3>
             <NumberProjectCard
-              img="key.svg"
+              img="/images/key.svg"
               text="Surface"
               metter={true}
               value={mesure.surfaceTotal ? String(mesure.surfaceTotal) : "0"}
