@@ -95,7 +95,7 @@ collections:
           - { label: Texte 1, name: text1, widget: string }
           - { label: Texte 2, name: text2, widget: string }
           - { label: Titre, name: title, widget: string }
-          - { label: Gif, name: gif, widget: "image",  allow_multiple: false }
+          - { label: Gif, name: gif, widget: "image",  allow_multiple: false ,required: false }
           - label: Compétences
             name: skill
             widget: list
@@ -228,7 +228,7 @@ collections:
           - { label: Email, name: mail, widget: string ,required: false}
           - { label: Copyright, name: copyright, widget: string ,required: false}
           - { label: Titre, name: title, widget: string ,required: false}
-          - { label: Gif, name: gif, widget: "image",  allow_multiple: false }
+          - { label: Gif, name: gif, widget: "image",  allow_multiple: false ,required: false }
           - label: Social Info
             name: social
             widget: list
