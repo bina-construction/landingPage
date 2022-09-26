@@ -103,3 +103,62 @@ collections:
             - { label: "Titre", name: "title", widget: "string" }
             - { label: "Nom de l'icon", name: "icon", widget: "image",  allow_multiple: false }
         
+        - label: "Projets"
+          name: "project"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Titre, name: title, widget: string }
+          - label: "Projet N°1"
+            name: "projectType1"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+          - label: "Projet N°2"
+            name: "projectType2"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+          - label: "Projet N°3"
+            name: "projectType3"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+          - label: "Projet N°4"
+            name: "projectType4"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: string }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+        
