@@ -225,21 +225,21 @@ collections:
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Email, name: mail, widget: string }
-          - { label: Copyright, name: copyright, widget: string }
-          - { label: Titre, name: title, widget: string }
+          - { label: Email, name: mail, widget: string ,required: false}
+          - { label: Copyright, name: copyright, widget: string ,required: false}
+          - { label: Titre, name: title, widget: string ,required: false}
           - { label: Gif, name: gif, widget: "image",  allow_multiple: false }
           - label: Social Info
             name: social
             widget: list
             fields:
-            - { label: "Titre", name: "title", widget: "string" }
-            - { label: "Lien", name: "link", widget: "string" }
-            - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+            - { label: "Titre", name: "title", widget: "string" ,required: false }
+            - { label: "Lien", name: "link", widget: "string" ,required: false}
+            - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false , required: false}
           - label: Complement
             name: additionalLink
             widget: list
             fields:
-            - { label: "Titre", name: "title", widget: "string" }
-            - { label: "Lien", name: "link", widget: "string" }
+            - { label: "Titre", name: "title", widget: "string" ,required: false }
+            - { label: "Lien", name: "link", widget: "string" ,required: false }
 
