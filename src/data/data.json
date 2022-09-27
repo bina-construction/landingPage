@@ -5,7 +5,7 @@
     "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeuil d'expert"
   },
   "skills": {
-    "title": "Savoir-faire",
+    "title": "Leurs déroulements",
     "gif": "/images/header.webp",
     "skill": [
       {
@@ -125,7 +125,7 @@
   },
   "about": {
     "title": {
-      "main": "On fait les présentation",
+      "main": "Qui sommes nous ?",
       "reduce": "Présentation"
     },
     "text-bina": "En tant que contractant général, BINA apporte une solution complète clé en main de conception - réalisation à vos travaux. La société se porte garant de la bonne exécution des travaux avec l’exigence de la qualité et dans le respect des budgets et des plannings. Véritable interface avec tous les corps de métiers, grâce à notre modèle d’interlocuteur unique, nous assurons la cohérence et régulons les étapes décisionnelles comme opérationnelles pour permettre à tous de travailler en toute sérénité et transparence.",
@@ -142,7 +142,7 @@
   "NavBar": {
     "Links": [
       {
-        "title": "L'accompagnement-1",
+        "title": "L'accompagnement",
         "href": "#accompaniment-fs"
       },
       {
@@ -161,7 +161,7 @@
     "Boutton": "Préparer mon projet"
   },
   "project": {
-    "title": "Nos projets",
+    "title": "Vos projets",
     "projectType1": {
       "title": "Hôtellerie & restauration",
       "background": "/images/pro.png",
