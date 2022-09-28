@@ -5,7 +5,7 @@
     "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeil d'expert"
   },
   "skills": {
-    "title": "Savoir-faire",
+    "title": "Leurs déroulements",
     "gif": "/images/header.webp",
     "skill": [
       {
@@ -141,7 +141,7 @@
   "NavBar": {
     "Links": [
       {
-        "title": "L'accompagnement-1",
+        "title": "L'accompagnement",
         "href": "#accompaniment-fs"
       },
       {
@@ -160,7 +160,7 @@
     "Boutton": "Préparer mon projet"
   },
   "project": {
-    "title": "Nos projets",
+    "title": "Vos projets",
     "projectType1": {
       "title": "Hôtellerie & restauration",
       "background": "/images/pro.png",
