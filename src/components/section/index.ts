@@ -2,8 +2,6 @@ import NavBar from "./NavBar";
 import Header from "./Header";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Sponsor from "./Sponsor";
-import Quote from "./Quote";
 import ChooseClient from "./ChooseClient";
 import ClientInfo from "./ClientInfo";
 import Service from "./Service";
@@ -20,8 +18,6 @@ export {
   Header,
   Contact,
   Footer,
-  Sponsor,
-  Quote,
   ChooseClient,
   ClientInfo,
   Service,

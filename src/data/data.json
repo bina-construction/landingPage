@@ -2,7 +2,7 @@
   "Contact": {
     "background": "/images/header.webp",
     "title": "Pas le temps pour un devis. Laisser vos coordonnées, on vous rappelle",
-    "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeuil d'expert"
+    "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeil d'expert"
   },
   "skills": {
     "title": "Savoir-faire",
@@ -33,8 +33,7 @@
         "icon": "/images/approve.svg"
       }
     ],
-    "text1": "BINA a pour mot d’ordre de privilégier la qualité à la quantité. Nous vous proposons un service complet. Un architecte d’intérieur, un économiste, un conducteur de travaux et des bureaux d’études sont mis à votre disposition.",
-    "text2": "L’ensemble de nos artisans sont reconnus pour leur savoir-faire. En tant que contractant général, BINA assure la conception et la réalisation d’un projet en 6 temps :"
+    "text": "BINA a pour mot d’ordre de privilégier la qualité à la quantité. Nous vous proposons un service complet. Un architecte d’intérieur, un économiste, un conducteur de travaux et des bureaux d’études sont mis à votre disposition. L’ensemble de nos artisans sont reconnus pour leur savoir-faire. En tant que contractant général, BINA assure la conception et la réalisation d’un projet en 6 temps :"
   },
   "accompaniment": {
     "title": "L'accompagnement",
@@ -125,7 +124,7 @@
   },
   "about": {
     "title": {
-      "main": "On fait les présentation",
+      "main": "QUI SOMMES NOUS",
       "reduce": "Présentation"
     },
     "text-bina": "En tant que contractant général, BINA apporte une solution complète clé en main de conception - réalisation à vos travaux. La société se porte garant de la bonne exécution des travaux avec l’exigence de la qualité et dans le respect des budgets et des plannings. Véritable interface avec tous les corps de métiers, grâce à notre modèle d’interlocuteur unique, nous assurons la cohérence et régulons les étapes décisionnelles comme opérationnelles pour permettre à tous de travailler en toute sérénité et transparence.",
@@ -251,23 +250,6 @@
       ]
     }
   },
-  "sponsor": {
-    "title": "Nos Partenaires",
-    "img": [
-      {
-        "title": "/images/corp1.svg"
-      },
-      {
-        "title": "/images/corp2.svg"
-      },
-      {
-        "title": "/images/corp3.svg"
-      },
-      {
-        "title": "/images/corp4.svg"
-      }
-    ]
-  },
   "Footer": {
     "mail": "contact@bina.fr",
     "social": [
@@ -307,9 +289,5 @@
       }
     ],
     "copyright": "Bina © 2022"
-  },
-  "quote": {
-    "sentence": "« Les meilleures choses qui arrivent dans le monde de l’entreprise ne sont pas le résultat du travail d’un seul homme. C’est le travail de toute une équipe…»",
-    "author": "Steve Jobs"
   }
 }
