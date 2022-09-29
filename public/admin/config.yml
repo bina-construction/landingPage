@@ -97,8 +97,7 @@ collections:
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Texte 1, name: text1, widget: string }
-          - { label: Texte 2, name: text2, widget: string }
+          - { label: Texte, name: text, widget: string }
           - { label: Titre, name: title, widget: string }
           - { label: Gif, name: gif, widget: "image",  allow_multiple: false ,required: false }
           - label: Compétences
