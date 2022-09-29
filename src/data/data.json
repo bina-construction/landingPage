@@ -1,6 +1,6 @@
 {
   "Contact": {
-    "background": "/images/header.webp",
+    "background": "/images/contact.webp",
     "title": "Pas le temps pour un devis. Laisser vos coordonnées, on vous rappelle",
     "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeil d'expert"
   },
@@ -127,8 +127,8 @@
       "main": "QUI SOMMES NOUS",
       "reduce": "Présentation"
     },
-    "text-bina": "En tant que contractant général, BINA apporte une solution complète clé en main de conception - réalisation à vos travaux. La société se porte garant de la bonne exécution des travaux avec l’exigence de la qualité et dans le respect des budgets et des plannings. Véritable interface avec tous les corps de métiers, grâce à notre modèle d’interlocuteur unique, nous assurons la cohérence et régulons les étapes décisionnelles comme opérationnelles pour permettre à tous de travailler en toute sérénité et transparence.",
-    "text": "Lorem ipsum dolor sit amete, consectetur adipiscing elit. Morbi sit amet convallis dolor, vitae pharetra magna. Vivamus ac scelerisque risus. In hac habitasse platea dictumst. Curabitur malesuada id odio et rhoncus. Curabitur non ligula velit. Curabitur tristique tempor accumsan.",
+    "text-bina": "En tant que contractant général, BINA apporte une solution complète clé en main de conception - réalisation à vos travaux. La société se porte garant de la bonne exécution des travaux avec l’exigence de la qualité et dans le respect des budgets et des plannings. Véritable interface avec tous les corps de métiers, grâce à notre modèle d’interlocuteur unique, nous assurons la cohérence et régulons les étapes décisionnelles comme opérationnelles pour permettre à tous de travailler en toute sérénité et transparence. Nicolas et Faycal ont évolué durant une dizaine d'années au sein d'un grand major du secteur de la construction, animé par la même passion, ils ont décidés d’associer leurs expertises et de se lancer un nouveau défi. En mars 2071, Bina est née.",
+    "text": "La démarche est d'intégrer dans vos idées de projet notre expertise. Du particulier au professionnel, BINA permet à ses clients de profiter de la rigueur des grands groupes en proposant les mêmes avantages au bon prix.",
     "card1": {
       "name": "Fayçal Benchoira",
       "img": "/images/profil2.png"
