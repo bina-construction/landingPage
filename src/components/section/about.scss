@@ -11,12 +11,14 @@
     @include variables.dcc(row);
 
     h4 {
-      width: 80%;
+      // width: 80%;
+      padding-left: 7rem;
+      padding-right: 7rem;
       text-align: justify;
       font-size: 20px;
       font-weight: 400;
       color: variables.$secondary-color;
-      line-height: 1.2;
+      line-height: 1.5;
     }
   }
 
@@ -29,11 +31,12 @@
       background-color: variables.$primary-color;
       padding: 2rem;
       box-shadow: 0px 3px 6px #00000029;
+      padding-left: 7rem;
 
       p {
         font-size: 25px;
         text-align: justify;
-        line-height: 2;
+        line-height: 1.5;
         font-weight: 200;
         color: variables.$gray-color;
       }
@@ -95,6 +98,9 @@
 @media only screen and (max-width: 580px) {
   #about {
     .bina-text h4 {
+      width: 80%;
+      padding-left: 0rem;
+      padding-right: 0rem;
       font-size: 15px;
     }
   }
@@ -107,7 +113,7 @@
         width: 100%;
 
         p {
-          line-height: 2;
+          line-height: 1.5;
           font-size: 17px;
         }
       }
