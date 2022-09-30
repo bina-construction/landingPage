@@ -21,11 +21,10 @@ collections:
   editor:
     preview: false
   files: # The path to the folder where the documents are stored
-    - label: "Data"
-      name: "data"
+    - name: "data"
       file: "src/data/data.json"
       format: "json"
-      create: true # Allow users to create new documents in this collection
+      create: false # Allow users to create new documents in this collection
       slug: "data" # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
         - label: "NavBar"
@@ -97,7 +96,7 @@ collections:
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Texte, name: text, widget: string }
+          - { label: Texte, name: text, widget: text }
           - { label: Titre, name: title, widget: string }
           - { label: Gif, name: gif, widget: "image",  allow_multiple: false ,required: false }
           - label: Compétences
