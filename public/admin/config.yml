@@ -21,24 +21,20 @@ collections:
   editor:
     preview: false
   files: # The path to the folder where the documents are stored
-    - name: "NavBar"
-      label: "NavBar"
+    - label: "NavBar"
+      name: "NavBar"
       file: "src/data/data.json"
       format: "json"
-      create: false # Allow users to create new documents in this collection
-      fields: # The fields for each document, usually in front matter
-        - label: "NavBar"
-          name: "NavBar"
-          widget: "object"
-          collapsed: true
-          fields: 
-          - { label: Nom du Bouton, name: Boutton, widget: string }
-          - label: Liens
-            name: Links
-            widget: list
-            fields:
-            - { label: "Titre", name: "title", widget: "string" }
-            - { label: "Redirection", name: "href", widget: "string" }
+      widget: "object"
+      collapsed: true
+      fields: 
+      - { label: Nom du Bouton, name: Boutton, widget: string }
+      - label: Liens
+        name: Links
+        widget: list
+        fields:
+        - { label: "Titre", name: "title", widget: "string" }
+        - { label: "Redirection", name: "href", widget: "string" }
       
       
 - name: "Other" # Used in routes, e.g., /admin/collections/blog
