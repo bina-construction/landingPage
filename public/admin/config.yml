@@ -22,6 +22,7 @@ collections:
     preview: false
   files: # The path to the folder where the documents are stored
     - name: "NavBar"
+      label: "NavBar"
       file: "src/data/data.json"
       format: "json"
       create: false # Allow users to create new documents in this collection
@@ -46,6 +47,7 @@ collections:
     preview: false
   files: # The path to the folder where the documents are stored
     - name: "Other"
+      label: "Other"
       file: "src/data/data.json"
       format: "json"
       create: false # Allow users to create new documents in this collection
