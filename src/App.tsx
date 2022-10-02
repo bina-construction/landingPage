@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { HomeScreen, ProjectScreen } from "./components/screens/";
+import { HomeScreen, ProjectScreen, CguScreen } from "./components/screens/";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/home" element={<HomeScreen />} />
+        <Route path="/cgu" element={<CguScreen />} />
         <Route path="/project" element={<ProjectScreen />} />
       </Routes>
 
