@@ -120,7 +120,7 @@ collections:
             fields: 
             - { label: Titre, name: title, widget: string }
             - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
-            - { label: Présentation, name: text, widget: string }
+            - { label: Présentation, name: text, widget: text }
             - label: "Images"
               name: "img"
               widget: list
@@ -133,7 +133,7 @@ collections:
             fields: 
             - { label: Titre, name: title, widget: string }
             - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
-            - { label: Présentation, name: text, widget: string }
+            - { label: Présentation, name: text, widget: text }
             - label: "Images"
               name: "img"
               widget: list
@@ -146,7 +146,7 @@ collections:
             fields: 
             - { label: Titre, name: title, widget: string }
             - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
-            - { label: Présentation, name: text, widget: string }
+            - { label: Présentation, name: text, widget: text }
             - label: "Images"
               name: "img"
               widget: list
@@ -159,7 +159,7 @@ collections:
             fields: 
             - { label: Titre, name: title, widget: string }
             - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
-            - { label: Présentation, name: text, widget: string }
+            - { label: Présentation, name: text, widget: text }
             - label: "Images"
               name: "img"
               widget: list
@@ -171,8 +171,8 @@ collections:
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Text, name: text-bina, widget: string }
-          - { label:  Sous-Text, name: text, widget: string }
+          - { label: Text, name: text-bina, widget: text }
+          - { label:  Sous-Text, name: text, widget: text }
           - label: "Titre"
             name: "title"
             widget: "object"
@@ -202,7 +202,7 @@ collections:
           fields: 
           - { label: Photo de Couverture, name: background, widget: "image",  allow_multiple: false }
           - { label:  Titre, name: title, widget: string }
-          - { label: Sous-Titre, name: subtitle, widget: string }
+          - { label: Sous-Titre, name: subtitle, widget: text }
 
         - label: "Footer"
           name: "Footer"
