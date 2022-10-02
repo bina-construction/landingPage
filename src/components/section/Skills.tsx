@@ -5,6 +5,9 @@ import "./skills.scss";
 import { Title, Img } from "../atoms";
 import { Skill } from "../molecules";
 
+// import Markdown from "react-markdown"
+// <Markdown source={excerptList[i]} escapeHtml={false} />
+
 const Skills: React.FC = () => {
   return (
     <section id="home-skills">
