@@ -8,7 +8,7 @@ interface Props {
   withoutLink?: boolean;
 }
 
-const Footer: React.FC<Props> = ({ withoutLink = true }) => {
+const Footer: React.FC<Props> = ({ withoutLink = false }) => {
   return (
     <footer id="footer">
       <div className="top">
