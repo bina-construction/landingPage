@@ -1,0 +1,61 @@
+@use "../../utils/variables.scss";
+
+//Variant color styles
+.cgu-nav-default-color {
+  background-color: variables.$primary-color;
+}
+
+.bina-logo {
+  transition: all 0.3s ease;
+}
+
+#cgu-nav {
+  position: fixed;
+  top: 0;
+  @include variables.wh(100%, 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  z-index: 99;
+  transition: all 0.3s ease;
+  padding: 0 2rem;
+
+  .bina-logo {
+    transition: all 0.3s ease;
+  }
+
+}
+
+.cgu-main {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  margin-left: 10rem;
+  margin-right: 10rem;
+  text-align: justify;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 850px) {
+  .cgu-main {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cgu-main {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
