@@ -4,6 +4,7 @@ import infoJson from "../../data/data.json";
 import "./skills.scss";
 import { Title, Img } from "../atoms";
 import { Skill } from "../molecules";
+import "./accompanimentFs.scss";
 
 const Skills: React.FC = () => {
   return (
@@ -24,13 +25,28 @@ const Skills: React.FC = () => {
       </div>
       <div className="bottom">
         {infoJson.skills.skill.map((elm, index) => (
-          <Skill
-            icon={elm.icon}
-            text={elm.title}
-            index={String(index + 1)}
-            htmlId={`home-skills-skill`}
-            key={`home-skills-skill-component-${index}`}
-          />
+          // <Skill
+          //   icon={elm.icon}
+          //   text={elm.title}
+          //   index={String(index + 1)}
+          //   htmlId={`home-skills-skill`}
+          //   key={`home-skills-skill-component-${index}`}
+          // />
+
+          <div
+            className="item-container"
+            key={`accompaniment-fs-item-container-${index}`}
+          >
+            <div className="icon-container">
+              <Img
+                className="icon"
+                img={elm.icon}
+                htmlId={`home-accompaniment-top-img${index}`}
+                size="contain"
+              />
+            </div>
+            <p id={`home-accompaniment-top-title${index}`}>{elm.title}</p>
+          </div>
         ))}
       </div>
     </section>
