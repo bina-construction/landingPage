@@ -235,3 +235,13 @@ collections:
       slug: "data" # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
         - { label: Info des CGU, name: cgu, widget: markdown }
+   
+    - label: "Formulaire de Contact"
+      name: "contact"
+      file: "src/data/mail.json"
+      format: "json"
+      fields: # The fields for each document, usually in front matter
+        - { label: "L'Email d'envoi", name: mailFrom, widget: string, required: true   }
+        - { label: "L'Email de Reception ", name: mailTo, widget: string, required: true   }
+
+

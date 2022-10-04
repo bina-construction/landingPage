@@ -1,3 +1,4 @@
+import infoJson from "../data/mail.json";
 const BASE_URL = "/.netlify/functions/sendMail";
 
 const sendEmailFromEmailJS = async (
@@ -8,16 +9,16 @@ const sendEmailFromEmailJS = async (
 
   const data = {
     from: {
-      email: "contact@njgconnect.fr",
+      email: infoJson.mailFrom,
     },
     to: [
       {
-        email: forWho === "us" ? "jeremynohile@gmail.com" : body.mail,
+        email: forWho === "us" ? infoJson.mailTo : body.mail,
       },
     ],
     variables: [
       {
-        email: forWho === "us" ? "jeremynohile@gmail.com" : body.mail,
+        email: forWho === "us" ? infoJson.mailTo : body.mail,
         substitutions: [
           {
             var: "info",
