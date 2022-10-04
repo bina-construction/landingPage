@@ -277,15 +277,15 @@
     "additionalLink": [
       {
         "title": "Déposez un devis",
-        "link": "#"
+        "link": "/devis"
       },
       {
         "title": "Demande de contact",
-        "link": "#"
+        "link": "#contact"
       },
       {
         "title": "Condition Générales d'Utilisation",
-        "link": "#"
+        "link": "/cgu"
       }
     ],
     "copyright": "Bina © 2022"

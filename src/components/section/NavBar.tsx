@@ -85,7 +85,7 @@ const NavBar: React.FC = () => {
         <div className={`link ${isDefault && "link-default-color"}`}>
           <Button
             value={infoJson.NavBar.Boutton}
-            onClick={() => navigate("/project")}
+            onClick={() => navigate("/devis")}
             className={
               isDefault
                 ? "nav-button-default-color"

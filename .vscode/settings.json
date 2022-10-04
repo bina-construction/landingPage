@@ -1,6 +1,5 @@
 {
   "yaml.schemas": {
-    "file:///toc.schema.json": "/toc\\.yml/i",
     "https://json.schemastore.org/netlify.json": "file:///Users/jeremynoh/Desktop/freelance/bina-web/public/admin/config.yml"
   }
 }
