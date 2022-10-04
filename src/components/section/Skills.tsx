@@ -32,7 +32,6 @@ const Skills: React.FC = () => {
           //   htmlId={`home-skills-skill`}
           //   key={`home-skills-skill-component-${index}`}
           // />
-
           <div
             className="item-container"
             key={`accompaniment-fs-item-container-${index}`}
