@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Bina Construction</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4e2eaec7-4912-4010-9fd2-48fe9caf6e7e/deploy-status)](https://app.netlify.com/sites/bina/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/909806ee-2b1a-441f-8df4-bd108a9c33da/deploy-status)](https://app.netlify.com/sites/bina/deploys)
 
 <br />
 
