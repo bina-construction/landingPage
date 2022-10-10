@@ -85,7 +85,7 @@ const NavBar: React.FC = () => {
         <div className={`link ${isDefault && "link-default-color"}`}>
           <Button
             value={infoJson.NavBar.Boutton}
-            onClick={() => navigate("/project")}
+            onClick={() => navigate("/devis")}
             className={
               isDefault
                 ? "nav-button-default-color"
@@ -94,7 +94,7 @@ const NavBar: React.FC = () => {
             htmlId="navbar-button"
           />
           <IconButton
-            img="letter.webp"
+            img="/images/letter.webp"
             onClick={() => scrollToContact()}
             style={{ border: isDefault ? "#F0E7D6" : "black" }}
           />
@@ -107,7 +107,10 @@ const NavBar: React.FC = () => {
             isDefault ? "icon-default-color" : "icon-variant-color"
           }`}
         >
-          <IconButton img="menu.webp" onClick={() => setIsColumn(!isColumn)} />
+          <IconButton
+            img="/images/menu.webp"
+            onClick={() => setIsColumn(!isColumn)}
+          />
         </div>
       )}
 
@@ -117,7 +120,7 @@ const NavBar: React.FC = () => {
             isDefault ? "icon-default-color" : "icon-variant-color"
           }`}
         >
-          <IconButton img="close.webp" onClick={onClose} />
+          <IconButton img="/images/close.webp" onClick={onClose} />
         </div>
       )}
     </nav>

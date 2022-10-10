@@ -18,11 +18,8 @@ const Skills: React.FC = () => {
         />
       </div>
       <div className="mid">
-        <h5 id="home-skills-text1" className="text">
-          {infoJson.skills.text1}
-        </h5>
-        <h5 id="home-skills-text2" className="text">
-          {infoJson.skills.text2}
+        <h5 id="home-skills-text" className="text">
+          {infoJson.skills.text}
         </h5>
       </div>
       <div className="bottom">

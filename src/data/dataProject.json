@@ -1,43 +1,43 @@
 {
   "screen1": {
-    "background": "choose.webp",
+    "background": "/images/choose.webp",
     "title": "Votre projet concerne:",
     "card1": {
-      "icon": "key.svg",
+      "icon": "/images/key.svg",
       "text": "Professionnel"
     },
     "card2": {
-      "icon": "key.svg",
+      "icon": "/images/key.svg",
       "text": "Particuliers"
     }
   },
   "screen2": {
-    "background": "infoClient.webp",
+    "background": "/images/infoClient.webp",
     "title": "Parlez nous de vous:"
   },
   "screen3": {
-    "background": "service.webp",
+    "background": "/images/service.webp",
     "title": "Dans quel domaine d'activité êtes-vous ?",
     "card1": {
-      "icon": "key.svg",
+      "icon": "/images/key.svg",
       "text": "Hôtellerie / Restauration"
     },
     "card2": {
-      "icon": "key.svg",
+      "icon": "/images/key.svg",
       "text": "Retail"
     },
     "card3": {
-      "icon": "key.svg",
+      "icon": "/images/key.svg",
       "text": "Autre Projet"
     }
   },
   "screen4": {
-    "background": "surface.webp",
+    "background": "/images/surface.webp",
     "title1": "De quel surface",
     "title2": "Pour combien de pièces ?"
   },
   "screen5": {
-    "background": "file.webp",
+    "background": "/images/file.webp",
     "title": "Déposez vos documents",
     "inputText": "Chargez vos documents",
     "emptyFileTitle": "Aucun document chargé",

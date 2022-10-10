@@ -17,7 +17,7 @@ const Img: React.FC<Props> = ({
 }) => {
   return (
     <img
-      src={require(`../../assets/images/${img}`)}
+      src={img}
       id={htmlId}
       className={`${className} atom-img`}
       alt={img}

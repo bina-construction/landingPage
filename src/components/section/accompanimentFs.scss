@@ -6,21 +6,27 @@
 
   .main-container {
     @include variables.wh(100%, auto);
-    background-color: variables.$primary-color;
-    box-shadow: inset 0px 3px 6px #00000029;
+    background-color: white;
     padding: 2rem;
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 5rem;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
 
     .item-container {
-      @include variables.wh(100%, 100%);
-      @include variables.dbc(column);
-
+      width: 350px;
+      @include variables.dbc(row);
+      justify-content: center;
+      align-items: center;
+      border: 1px solid variables.$primary-color;
+      border-radius: 100px;
+      padding: 25px;
       .icon-container {
-        @include variables.wh(60px, 60px);
+        width: 60px;
+        aspect-ratio: 1;
         background-color: white;
         border-radius: 50%;
         padding: 15px;
@@ -37,16 +43,16 @@
         color: variables.$secondary-color;
         letter-spacing: 3px;
         text-align: center;
-        margin-top: 2rem;
+        width: 250px;
       }
     }
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 800px) {
   #accompaniment-fs {
     .main-container {
-      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
     }
   }
 }
@@ -67,7 +73,6 @@
   #accompaniment-fs {
     .main-container {
       padding: 2rem 1rem;
-      grid-template-columns: repeat(1, 1fr);
       .item-container {
         @include variables.dbc(row);
         p {

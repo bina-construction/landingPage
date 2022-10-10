@@ -75,14 +75,14 @@ const ClientInfo: React.FC<Props> = ({
     <section id="clientInfo">
       <Img
         img={infoJson.screen2.background}
-        className="left-img"
+        className="/images/left-img"
         size="cover"
         htmlId="project-screen2-bg"
       />
       <div className="right-container">
         <div className="top">
           <div className="back-button">
-            <IconButton img="arrow.svg" onClick={back} />
+            <IconButton img="/images/arrow.svg" onClick={back} />
           </div>
           <BinaLogo onClick={home} />
         </div>
@@ -97,7 +97,7 @@ const ClientInfo: React.FC<Props> = ({
         <div className="bottom">
           <div className="bottom-submit-button">
             <IconButton
-              img="arrow.svg"
+              img="/images/arrow.svg"
               style={{ background: "#62b2ab" }}
               onClick={verif}
             />

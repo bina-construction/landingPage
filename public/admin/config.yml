@@ -1,31 +1,51 @@
 backend:
   name: git-gateway
   branch: dev
-  repo: github.com/NJG-connect/bina-web/
+  repo: github.com/NJG-connect/bina-landingPage/
   # display_url: https://confident-bardeen-72ada4.netlify.app/
   # site_url: https://confident-bardeen-72ada4.netlify.app/
+logo_url: https://njgconnect-cms.netlify.app/static/media/logo.e080c486.svg
 
-media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images"
+# media_folder: "src/assets/images" # Media files will be stored in the repo under static/images/uploads
+# public_folder: "/images"
 
+media_folder: "public/images" 
+public_folder: "/images" 
+
+editor:
+  preview: false
 
 collections:
 - name: "Data" # Used in routes, e.g., /admin/collections/blog
-  label: "Data" # Used in the UI
+  label: "CMS - Configuration du Site" # Used in the UI
+  editor:
+    preview: false
   files: # The path to the folder where the documents are stored
-    - label: "Data"
+    - label: "Info du site"
       name: "data"
       file: "src/data/data.json"
       format: "json"
       create: true # Allow users to create new documents in this collection
       slug: "data" # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
+        - label: "NavBar"
+          name: "NavBar"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Nom du Bouton, name: Boutton, widget: string }
+          - label: Liens
+            name: Links
+            widget: list
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+            - { label: "Redirection", name: "href", widget: "string" }
         - label: "Header"
           name: "Header"
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Image de Fond, name: background, widget: string }
+          - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
           - label: "Titre"
             name: "title"
             widget: "object"
@@ -33,50 +53,195 @@ collections:
             fields:
               - { label: Ligne 1, name: line1, widget: string }
               - { label: Ligne 2, name: line2, widget: string }
+      
+        - label: "Accompagnement"
+          name: "accompaniment"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Titre, name: title, widget: string }
+          - { label: Image, name: img, widget: "image",  allow_multiple: false }
+          - label: "Contenu Top"
+            name: "top"
+            widget: "list"
+            fields:
+            - { label: "Titre", name: "title", widget: "string" }
+            - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+          - label: "Contenu à gauche"
+            name: "left"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - label: "items"
+              name: "item"
+              widget: "list"
+              fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+          - label: "Contenu à droite"
+            name: "right"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - label: items
+              name: item
+              widget: list
+              fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false }
+
         - label: "Savoir-faire"
           name: "skills"
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Texte 1, name: text1, widget: string }
-          - { label: Texte 2, name: text2, widget: string }
+          - { label: Texte, name: text, widget: text }
           - { label: Titre, name: title, widget: string }
-          - { label: Gif, name: gif, widget: string }
+          - { label: Gif, name: gif, widget: "image",  allow_multiple: false ,required: false }
           - label: Compétences
             name: skill
             widget: list
             fields:
             - { label: "Titre", name: "title", widget: "string" }
-            - { label: "Nom de l'icon", name: "icon", widget: "string" }
-
-        - label: "Footer"
-          name: "Footer"
+            - { label: "Nom de l'icon", name: "icon", widget: "image",  allow_multiple: false }
+        
+        - label: "Projets"
+          name: "project"
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Email, name: mail, widget: string }
-          - { label: Copyright, name: copyright, widget: string }
           - { label: Titre, name: title, widget: string }
-          - { label: Gif, name: gif, widget: string }
-          - label: Social Info
-            name: social
-            widget: list
-            fields:
-            - { label: "Titre", name: "title", widget: "string" }
-            - { label: "Lien", name: "link", widget: "string" }
-            - { label: "Icon", name: "icon", widget: "string" }
-          - label: Complement
-            name: additionalLink
-            widget: list
-            fields:
-            - { label: "Titre", name: "title", widget: "string" }
-            - { label: "Lien", name: "link", widget: "string" }
+          - label: "Projet N°1"
+            name: "projectType1"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: text }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+          - label: "Projet N°2"
+            name: "projectType2"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: text }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+          - label: "Projet N°3"
+            name: "projectType3"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: text }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+          - label: "Projet N°4"
+            name: "projectType4"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Titre, name: title, widget: string }
+            - { label: Image de Fond, name: background, widget: "image",  allow_multiple: false }
+            - { label: Présentation, name: text, widget: text }
+            - label: "Images"
+              name: "img"
+              widget: list
+              fields:
+              - { label: "Image", name: "item", widget: "image",  allow_multiple: false }
+        
+        - label: "About"
+          name: "about"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Text, name: text-bina, widget: text }
+          - { label:  Sous-Text, name: text, widget: text }
+          - label: "Titre"
+            name: "title"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Phrase Principal, name: main, widget: string }
+            - { label:  Phrase Raccourci, name: reduce, widget: string }
+          - label: "Premier Profil"
+            name: "card1"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Nom, name: name, widget: string }
+            - { label:  Image, name: img, widget: "image",  allow_multiple: false }
+          - label: "Deuxième Profil"
+            name: "card2"
+            widget: "object"
+            collapsed: true
+            fields: 
+            - { label: Nom, name: name, widget: string }
+            - { label:  Image, name: img,widget: "image",  allow_multiple: false }
 
         - label: "Contact"
           name: "Contact"
           widget: "object"
           collapsed: true
           fields: 
-          - { label: Photo de Couverture, name: background, widget: string }
+          - { label: Photo de Couverture, name: background, widget: "image",  allow_multiple: false }
           - { label:  Titre, name: title, widget: string }
-          - { label: Sous-Titre, name: subtitle, widget: string }
+          - { label: Sous-Titre, name: subtitle, widget: text }
+
+        - label: "Footer"
+          name: "Footer"
+          widget: "object"
+          collapsed: true
+          fields: 
+          - { label: Email, name: mail, widget: string ,required: false}
+          - { label: Copyright, name: copyright, widget: string ,required: false}
+          - { label: Titre, name: title, widget: string ,required: false}
+          - { label: Gif, name: gif, widget: "image",  allow_multiple: false ,required: false }
+          - label: Social Info
+            name: social
+            widget: list
+            fields:
+            - { label: "Titre", name: "title", widget: "string" ,required: false }
+            - { label: "Lien", name: "link", widget: "string" ,required: false}
+            - { label: "Icon", name: "icon", widget: "image",  allow_multiple: false , required: false}
+          - label: Complement
+            name: additionalLink
+            widget: list
+            fields:
+            - { label: "Titre", name: "title", widget: "string" ,required: false }
+            - { label: "Lien", name: "link", widget: "string" ,required: false }
+
+    - label: "CGU"
+      name: "cgu"
+      file: "src/data/cgu.json"
+      format: "json"
+      create: true # Allow users to create new documents in this collection
+      slug: "data" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - { label: Info des CGU, name: cgu, widget: markdown }
+   
+    - label: "Formulaire de Contact"
+      name: "contact"
+      file: "src/data/mail.json"
+      format: "json"
+      fields: # The fields for each document, usually in front matter
+        - { label: "L'Email d'envoi", name: mailFrom, widget: string, required: true   }
+        - { label: "L'Email de Reception ", name: mailTo, widget: string, required: true   }
+
+

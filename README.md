@@ -1,30 +1,28 @@
-# Bina - Web (=> Développement)
+<p align="center">
+    <img alt="icon-bina" src="./src/assets/images/bina-logo.webp" >
+</p>
+<h1 align="center">Bina Construction</h1>
 
-## Ce qui à été fait
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e2eaec7-4912-4010-9fd2-48fe9caf6e7e/deploy-status)](https://app.netlify.com/sites/bina/deploys)
 
-- [x] Intégration complète de la maquette (responsive compris)
-- [x] Support complet de Laytom
-- [x] Vérification de tous les formulaires (sauf surface -> Screen 4 partie Projet)
-- [x] Récupération des données des formulaires
+<br />
+
+## Présentation Projet
+
+Ceci est notre site vitrine, _landing page_ afin de mieux nous comprendre, découvrir nos services ainsi que nos réalisations.
 
 <br>
 
 ---
 
-<br>
+## Design Atomique
 
-## Où récupérer les données des formulaire
+L'entrée des Vues de L'applications se constitue toujours de la même façon
 
-<br>
-
-<u>Formulaire de contact (=> home page) :</u>
-
-Fonction submitData() dans `HomeContainer.tsx`
-
-
-<u>Formulaire projet (=> Project page) :</u>
-
-Fonction submitData() dans `ProjectContainer.tsx`
+- Les Screens ( donnée de Navigation de l'application )
+- Les Containers ( La Logique )
+- Les Organisms ( La Vue | Formulaire... )
+- Les Molécules & Atoms (Element répétitif: boutton,icon, input, Titre )
 
 <br>
 
@@ -53,24 +51,6 @@ Les atoms suivants doivent être accompagné d'un style supplémentaire :
 - ImgTemplate (=> Contient des enfants)
 - CardButton (=> Contient des enfants)
 
-
-## Patch à réaliser
-
-- [ ] NavBar (=> Simplifier la structure html et le css) -> Section
-- [ ] ProjectGallery (=> Simplifier la structure html et le css) -> Molecule
-- [ ] ProjectGallery animation (=> Actuellement trop couteuse)
-- [ ] Bug sur l'import de fichier (=> Dernier screen partie projet)
-    
-    Impossible d'ajouter un fichier si celui-ci à été ajouté puis supprimer et qu'il n'y a pas d'autre fichier importé.
-    Pour reproduir le bug :
-    
-        1. Importer un fichier
-        2. le supprimer
-        3. L'importer à nouveau
-        
-- [ ] Remplacer tous les assets
-
-
 ## Comment est pensé le CSS
 
 Le nom des classes et id est en **snake case** version tirret du millieu _(=> dede-dede)_
@@ -79,9 +59,32 @@ Modèle **Desktop first** pour le responsive
 
 L'espacement des différentes section se fait avec un **margin-top de 3rem** sur chaque section
 
-
 ## .env
 
-|            Key              |     Description       |
-| :--------------------------:| :-------------------: |
-| REACT_APP_GH_TOKEN_PERSONAL | Clé d'API GitHub      |
+|                Key                |                     Description                     |
+| :-------------------------------: | :-------------------------------------------------: |
+|  REACT_APP_MAILER_SEND_TOKEN_ID   | [Clé d'API MailerSend](https://www.mailersend.com/) |
+| REACT_APP_MAILER_SEND_TEMPLATE_ID |                MailerSend TemplateID                |
+
+<br>
+
+### Commande à savoir
+
+<kbd>npm i</kbd> or <kbd> yarn install</kbd> - Install Dependencies
+
+<kbd> yarn start</kbd> - Run the App
+
+En savoir plus sur :
+
+- React.js : [For Develop this Project](https://fr.reactjs.org/)
+
+ENJOY 🙂
+
+## Team
+
+- Designé & Piloté par [Jonathan Nohile](https://www.linkedin.com/in/jonathan-nohile)
+- Développé par [Jeremy Noh](https://github.com/JeremyNoh)
+
+<br />
+
+Merci à vous 🤗

@@ -5,8 +5,6 @@ import {
   Header,
   Contact,
   Footer,
-  Sponsor,
-  Quote,
   About,
   Project,
   Skills,
@@ -34,10 +32,6 @@ const HomeOrganism: React.FC<Props> = ({ onSubmit }) => {
       <Project />
 
       <About />
-
-      <Sponsor />
-
-      <Quote />
 
       <Contact onSubmit={(data) => onSubmit(data)} />
 

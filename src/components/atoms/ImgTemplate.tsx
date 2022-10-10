@@ -27,7 +27,7 @@ const ImgTemplate: React.FC<Props> = ({
     <div
       className={`${className} atom-img-template`}
       style={{
-        backgroundImage: `url(${require(`../../assets/images/${img}`)})`,
+        backgroundImage: `url(${img})`,
         backgroundSize: `${size}`,
       }}
       id={htmlId}

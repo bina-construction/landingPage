@@ -1,160 +1,292 @@
 {
-  "NavBar": {
-    "Links": [
-      { "title": "L'accompagnement", "href": "#accompaniment-fs" },
-      { "title": "Leurs déroulements", "href": "#home-skills" },
-      { "title": "Vos Projets", "href": "#home-project" },
-      { "title": "Qui sommes nous ?", "href": "#about" }
-    ],
-    "Boutton": "Préparer mon projet"
-  },
-  "Header": {
-    "background": "header.webp",
-    "title": { "line1": "Un projet préparé,", "line2": "Un projet réussi..." }
+  "Contact": {
+    "background": "/images/contact.webp",
+    "title": "Pas le temps pour un devis. Laisser vos coordonnées, on vous rappelle",
+    "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeil d'expert"
   },
   "skills": {
-    "title": "Savoir-faire",
-    "gif": "header.webp",
+    "title": "Leurs déroulements",
+    "gif": "/images/header.webp",
     "skill": [
-      { "title": "Définir les objectifs du projet", "icon": "crossair.svg" },
-      { "title": "Conception du projet", "icon": "addFile.svg" },
-      { "title": "Validation du projet", "icon": "like.svg" },
-      { "title": "Coordination et suivi de vos travaux", "icon": "colab.svg" },
-      { "title": "Réception du chantier", "icon": "key2.svg" },
-      { "title": "Les garanties après travaux", "icon": "approve.svg" }
+      {
+        "title": "Définir les objectifs du projet",
+        "icon": "/images/crossair.svg"
+      },
+      {
+        "title": "Conception du projet",
+        "icon": "/images/addFile.svg"
+      },
+      {
+        "title": "Validation du projet",
+        "icon": "/images/like.svg"
+      },
+      {
+        "title": "Coordination et suivi de vos travaux",
+        "icon": "/images/colab.svg"
+      },
+      {
+        "title": "Réception du chantier",
+        "icon": "/images/key2.svg"
+      },
+      {
+        "title": "Les garanties après travaux",
+        "icon": "/images/approve.svg"
+      }
     ],
-    "text1": "BINA a pour mot d’ordre de privilégier la qualité à la quantité. Nous vous proposons un service complet. Un architecte d’intérieur, un économiste, un conducteur de travaux et des bureaux d’études sont mis à votre disposition.",
-    "text2": "L’ensemble de nos artisans sont reconnus pour leur savoir-faire. En tant que contractant général, BINA assure la conception et la réalisation d’un projet en 6 temps :"
+    "text": "BINA a pour mot d’ordre de privilégier la qualité à la quantité. Nous vous proposons un service complet. Un architecte d’intérieur, un économiste, un conducteur de travaux et des bureaux d’études sont mis à votre disposition. L’ensemble de nos artisans sont reconnus pour leur savoir-faire. En tant que contractant général, BINA assure la conception et la réalisation d’un projet en 6 temps :"
   },
   "accompaniment": {
     "title": "L'accompagnement",
     "top": [
-      { "title": "Une solution clé en main", "icon": "key.svg" },
+      {
+        "title": "Une solution clé en main",
+        "icon": "/images/key.svg"
+      },
       {
         "title": "Une assurance décennale de vos ouvrages",
-        "icon": "sheild.svg"
+        "icon": "/images/sheild.svg"
       },
-      { "title": "Un interlocuteur unique", "icon": "collaboration.svg" },
+      {
+        "title": "Un interlocuteur unique",
+        "icon": "/images/collaboration.svg"
+      },
       {
         "title": "Un engagement contractuel sur les prix et les délais",
-        "icon": "delay.svg"
+        "icon": "/images/delay.svg"
       },
       {
         "title": "Une sélection des entreprise sous traitantes",
-        "icon": "handleshake.svg"
+        "icon": "/images/handleshake.svg"
       },
-      { "title": "Une obligation de résultat", "icon": "improvement.svg" }
+      {
+        "title": "Une obligation de résultat",
+        "icon": "/images/improvement.svg"
+      }
     ],
-    "img": "Handshake_1.svg",
+    "img": "/images/Handshake_1.svg",
     "left": {
       "title": "Un projet individualisé",
       "item": [
-        { "title": "Un seul interlocuteur", "icon": "interlocuteur.png" },
-        { "title": "Un seul contrat", "icon": "contrat.png" },
-        { "title": "Une seule lecture", "icon": "lecture.png" },
-        { "title": "Un seul Prix", "icon": "prix.png" },
-        { "title": "Un seul délai", "icon": "delai.png" }
+        {
+          "title": "Un seul interlocuteur",
+          "icon": "/images/interlocuteur.png"
+        },
+        {
+          "title": "Un seul contrat",
+          "icon": "/images/contrat.png"
+        },
+        {
+          "title": "Une seule lecture",
+          "icon": "/images/lecture.png"
+        },
+        {
+          "title": "Un seul Prix",
+          "icon": "/images/prix.png"
+        },
+        {
+          "title": "Un seul délai",
+          "icon": "/images/delai.png"
+        }
       ]
     },
     "right": {
       "title": "Un service complet",
       "item": [
-        { "title": "Architectes d'intérieur", "icon": "archi.png" },
-        { "title": "Economiste", "icon": "eco.png" },
-        { "title": "Conducteur de travaux", "icon": "travaux.png" },
-        { "title": "Bureau d'étude", "icon": "etude.png" },
-        { "title": "Tout corps d'états", "icon": "corps_detat.png" }
+        {
+          "title": "Architectes d'intérieur",
+          "icon": "/images/archi.png"
+        },
+        {
+          "title": "Economiste",
+          "icon": "/images/eco.png"
+        },
+        {
+          "title": "Conducteur de travaux",
+          "icon": "/images/travaux.png"
+        },
+        {
+          "title": "Bureau d'étude",
+          "icon": "/images/etude.png"
+        },
+        {
+          "title": "Tout corps d'états",
+          "icon": "/images/corps_detat.png"
+        }
       ]
     }
   },
+  "Header": {
+    "background": "/images/header.webp",
+    "title": {
+      "line1": "Un projet préparé,",
+      "line2": "Un projet réussi..."
+    }
+  },
+  "about": {
+    "title": {
+      "main": "QUI SOMMES NOUS",
+      "reduce": "Présentation"
+    },
+    "text-bina": "En tant que contractant général, BINA apporte une solution complète clé en main de conception - réalisation à vos travaux. La société se porte garant de la bonne exécution des travaux avec l’exigence de la qualité et dans le respect des budgets et des plannings. Véritable interface avec tous les corps de métiers, grâce à notre modèle d’interlocuteur unique, nous assurons la cohérence et régulons les étapes décisionnelles comme opérationnelles pour permettre à tous de travailler en toute sérénité et transparence. Nicolas et Faycal ont évolué durant une dizaine d'années au sein d'un grand major du secteur de la construction, animé par la même passion, ils ont décidés d’associer leurs expertises et de se lancer un nouveau défi. En mars 2071, Bina est née.",
+    "text": "La démarche est d'intégrer dans vos idées de projet notre expertise. Du particulier au professionnel, BINA permet à ses clients de profiter de la rigueur des grands groupes en proposant les mêmes avantages au bon prix.",
+    "card1": {
+      "name": "Fayçal Benchoira",
+      "img": "/images/profil2.png"
+    },
+    "card2": {
+      "name": "Nicolas Iehl",
+      "img": "/images/profil1.png"
+    }
+  },
+  "NavBar": {
+    "Links": [
+      {
+        "title": "L'accompagnement",
+        "href": "#accompaniment-fs"
+      },
+      {
+        "title": "Leurs déroulements",
+        "href": "#home-skills"
+      },
+      {
+        "title": "Vos Projets",
+        "href": "#home-project"
+      },
+      {
+        "title": "Qui sommes nous ?",
+        "href": "#about"
+      }
+    ],
+    "Boutton": "Préparer mon projet"
+  },
   "project": {
-    "title": "Nos projets",
+    "title": "Vos projets",
     "projectType1": {
       "title": "Hôtellerie & restauration",
-      "background": "pro.png",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
+      "background": "/images/pro.png",
+      "text": "Lorem ipsum dolor sit amet, consecteture adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" }
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        }
       ]
     },
     "projectType2": {
       "title": "Retail",
-      "background": "retail.png",
+      "background": "/images/retail.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" }
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        }
       ]
     },
     "projectType3": {
       "title": "Résidentiel",
-      "background": "residentiel.png",
+      "background": "/images/residentiel.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" }
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        }
       ]
     },
     "projectType4": {
       "title": "Autres Projets",
-      "background": "autres.png",
+      "background": "/images/autres.png",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur iste nostrum magnam illo excepturi iure doloremque deleniti voluptatem molestias!",
       "img": [
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" },
-        { "item": "header.webp" }
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        },
+        {
+          "item": "/images/header.webp"
+        }
       ]
     }
-  },
-  "about": {
-    "title": { "main": "On fait les présentation", "reduce": "Présentation" },
-    "text-bina": "En tant que contractant général, BINA apporte une solution complète clé en main de conception - réalisation à vos travaux. La société se porte garant de la bonne exécution des travaux avec l’exigence de la qualité et dans le respect des budgets et des plannings. Véritable interface avec tous les corps de métiers, grâce à notre modèle d’interlocuteur unique, nous assurons la cohérence et régulons les étapes décisionnelles comme opérationnelles pour permettre à tous de travailler en toute sérénité et transparence.",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet convallis dolor, vitae pharetra magna. Vivamus ac scelerisque risus. In hac habitasse platea dictumst. Curabitur malesuada id odio et rhoncus. Curabitur non ligula velit. Curabitur tristique tempor accumsan.",
-    "card1": { "name": "Fayçal Benchoira", "img": "profil2.png" },
-    "card2": { "name": "Nicolas Iehl", "img": "profil1.png" }
-  },
-  "sponsor": {
-    "title": "Nos Partenaires",
-    "img": [
-      { "title": "corp1.svg" },
-      { "title": "corp2.svg" },
-      { "title": "corp3.svg" },
-      { "title": "corp4.svg" }
-    ]
-  },
-  "quote": {
-    "sentence": "« Les meilleures choses qui arrivent dans le monde de l’entreprise ne sont pas le résultat du travail d’un seul homme. C’est le travail de toute une équipe…»",
-    "author": "Steve Jobs"
-  },
-  "Contact": {
-    "background": "header.webp",
-    "title": "Pas le temps pour un devis. Laisser vos coordonnées, on vous rappelle",
-    "subtitle": "Parce qu'il n'est pas toujours évident de savoir ce que l'on veut, on vous aide à faire votre choix avec un oeuil d'expert"
   },
   "Footer": {
     "mail": "contact@bina.fr",
     "social": [
-      { "title": "LinkedIn", "link": "#", "icon": "linkedin.svg" },
-      { "title": "Instagram", "link": "#", "icon": "instagram.svg" },
-      { "title": "Facebook", "link": "#", "icon": "facebook.svg" },
-      { "title": "Pinterest", "link": "#", "icon": "pinterest.svg" }
+      {
+        "title": "LinkedIn",
+        "link": "#",
+        "icon": "/images/linkedin.svg"
+      },
+      {
+        "title": "Instagram",
+        "link": "#",
+        "icon": "/images/instagram.svg"
+      },
+      {
+        "title": "Facebook",
+        "link": "#",
+        "icon": "/images/facebook.svg"
+      },
+      {
+        "title": "Pinterest",
+        "link": "#",
+        "icon": "/images/pinterest.svg"
+      }
     ],
     "additionalLink": [
-      { "title": "Déposez un devis", "link": "#" },
-      { "title": "Demande de contact", "link": "#" },
-      { "title": "Condition Générales d'Utilisation", "link": "#" }
+      {
+        "title": "Déposez un devis",
+        "link": "/devis"
+      },
+      {
+        "title": "Demande de contact",
+        "link": "#contact"
+      },
+      {
+        "title": "Condition Générales d'Utilisation",
+        "link": "/cgu"
+      }
     ],
     "copyright": "Bina © 2022"
   }

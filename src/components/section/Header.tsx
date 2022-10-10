@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       <ImgTemplate
         className="header"
         htmlId="header"
-        img="header.webp"
+        img={infoJson.Header.background}
         size="cover"
       >
         <div className="header-title-container">

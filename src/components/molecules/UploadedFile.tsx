@@ -11,10 +11,10 @@ interface Props {
 const UploadedFile: React.FC<Props> = ({ fileName, onRemove }) => {
   return (
     <div className="atom-uploaded-file">
-      <Img img="check.webp" className="check-img" />
+      <Img img="/images/check.webp" className="check-img" />
       <p>{fileName}</p>
       <div className="close-container">
-        <IconButton img="close.webp" onClick={onRemove} />
+        <IconButton img="/images/close.webp" onClick={onRemove} />
       </div>
     </div>
   );
