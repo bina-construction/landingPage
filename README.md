@@ -17,7 +17,7 @@ Ceci est notre site vitrine, _landing page_ afin de mieux nous comprendre, déco
 
 ## Design Atomique
 
-L'entrée des Vues de L'applications se constitue toujours de la même façon
+L'entrée des Vues de L'applications se constitue toujours de la même façon :
 
 - Les Screens ( donnée de Navigation de l'application )
 - Les Containers ( La Logique )
