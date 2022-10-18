@@ -1,13 +1,9 @@
 backend:
   name: git-gateway
-  branch: dev
+  branch: main
   repo: github.com/NJG-connect/bina-landingPage/
-  # display_url: https://confident-bardeen-72ada4.netlify.app/
-  # site_url: https://confident-bardeen-72ada4.netlify.app/
 logo_url: https://njgconnect-cms.netlify.app/static/media/logo.e080c486.svg
 
-# media_folder: "src/assets/images" # Media files will be stored in the repo under static/images/uploads
-# public_folder: "/images"
 
 media_folder: "public/images" 
 public_folder: "/images" 
