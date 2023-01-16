@@ -118,8 +118,8 @@
   "Header": {
     "background": "/images/header.webp",
     "title": {
-      "line1": "Un projet préparé,",
-      "line2": "Un projet réussi..."
+      "line1": " ",
+      "line2": " "
     }
   },
   "about": {
